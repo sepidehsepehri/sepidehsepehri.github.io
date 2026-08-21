@@ -377,41 +377,43 @@
                 background-size: cover !important;
                 background-position: center !important;
                 background-repeat: no-repeat !important;
-                min-height: 100vh; /* باعث میشه کل صفحه رو بگیره */
-                display: flex;
-                align-items: center; /* محتوا رو میاره وسط صفحه */
+                min-height: 100vh; /* کل صفحه رو میگیره */
                 position: relative;
-                padding-top: 0 !important;
-                padding-bottom: 0 !important;
+                
+                /* این پدینگ باعث میشه محتوا بیاد بالا. اگه خواستی بالاتر بره عددش رو کمتر کن مثلا 10vh */
+                padding-top: 20vh !important; 
+                padding-bottom: 5vh !important;
                 border-top: none !important;
             }
             
-            /* یک لایه تیره ملایم روی عکس میندازه تا متن‌های سفید بهتر خونده بشن */
+            /* یک لایه تیره ملایم روی عکس میندازه تا متن‌ها بهتر خونده بشن */
             #astrotourism::before {
                 content: "";
                 position: absolute;
                 top: 0; left: 0; width: 100%; height: 100%;
-                background: rgba(0, 0, 0, 0.4); /* تیرگی ۴۰ درصدی */
+                background: rgba(0, 0, 0, 0.4); 
                 z-index: 1;
             }
             
             #astrotourism .container {
                 position: relative;
-                z-index: 2; /* متن‌ها رو میاره روی لایه تیره */
+                z-index: 2; 
             }
 
-            /* سفید کردن تیترها */
+            /* نارنجی کردن تیتر و هماهنگ کردنش با بقیه سایت */
             #astrotourism h2, 
             #astrotourism .section-title {
-                color: #ffffff !important;
+                color: #d97746 !important; /* رنگ نارنجی قالب */
+                margin-top: 0;
             }
 
-            /* روشن کردن متن‌ها و کمی بزرگ‌تر کردن برای خوانایی */
+            /* روشن کردن متن و بزرگ‌تر کردن سایز فونت */
             #astrotourism p, 
             #astrotourism .lead {
-                color: #f3f4f6 !important;
-                font-size: 1.25rem; 
-                line-height: 1.8;
+                color: #ffffff !important;
+                font-size: 1.8rem !important; /* سایز بزرگتر شده (میتونی 2rem هم بذاری) */
+                line-height: 1.6 !important;
+                font-weight: 300;
             }
         </style>
 
@@ -419,15 +421,12 @@
             <div class="container">
                 <div class="row s-works__header">
                     <div class="column xl-4 md-12 s-works__header-start">
-                        <h2 class="section-title">Astro Tourism</h2>
+                        <!-- اضافه کردن data-num برای اینکه خط تیره یا عدد استایل قالب رو بگیره -->
+                        <h2 data-num="04" class="section-title">Astro Tourism</h2>
                     </div>
                     <div class="column xl-8 md-12 s-works__header-end">
                         <p class="lead">
                         Merging my background in astrophysics with the beauty of travel. My vision for Astro Tourism is to bring the wonders of the cosmos to the public, creating unforgettable stargazing experiences under dark skies, and making science accessible and magical for everyone.
-                        </p>
-                        <!-- یک پاراگراف اضافه برای زیبایی بیشتر روی صفحه بزرگ -->
-                        <p class="lead" style="margin-top: 1.5rem;">
-                        Whether exploring ancient ruins under the Milky Way or mapping constellations, I aim to connect our history on Earth with the infinite universe above.
                         </p>
                     </div>
                 </div>
