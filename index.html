@@ -25,64 +25,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Dark Mode Override Styles -->
+    <!-- Dark Mode Override Styles (Only for Intro) -->
     <style>
-        /* Force the background color for the entire page */
-        body, html, #page, .s-pagewrap, section, .s-about, .s-profile, .s-works, .s-footer {
-            background-color: #050a19 !important;
-            color: #d1d5db !important; /* Light gray for general text */
-        }
-        
-        /* Make all headings and key titles crisp white */
-        h1, h2, h3, h4, h5, h6, 
-        .section-title, .info-card__title, .header-brand__text, 
-        .stat-item__value, .stat-item__label, .portfolio-item__title, 
-        .footer-title, .footer-overline, .modal__title, .modal__info h5 {
-            color: #ffffff !important;
-        }
-
-        /* Adjust paragraphs and secondary text to light gray for readability */
-        p, .lead, .intro-content__desc, .intro-content__overline, 
-        .info-card__desc, .info-card__entity, .info-card__date, 
-        .portfolio-item__description p, .ss-copyright, .ss-copyright a {
-            color: #d1d5db !important;
-        }
-
-        /* Make links white */
-        a, .header-nav__links a, .footer-social a, .link-list a, .modal__link {
-            color: #ffffff !important;
-        }
-
-        /* Add a hover effect for links */
-        a:hover, .header-nav__links a:hover, .footer-social a:hover, .link-list a:hover {
-            color: #d97746 !important; /* A muted orange to match your name */
-        }
-        
-        /* Style buttons for the dark theme */
-        .btn {
-            color: #ffffff !important;
-            border-color: #ffffff !important;
-        }
-        .btn:hover {
-            background-color: #ffffff !important;
-            color: #050a19 !important;
-        }
-        
-        /* Give info cards a slight transparent background so they stand out from the deep blue */
-        .info-card, .portfolio-item {
-            background-color: rgba(255, 255, 255, 0.03) !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-        }
-
-        /* Ensure modal popups match the dark theme */
-        .modal__content {
+        /* فقط رنگ پس‌زمینه و متن‌های بخش اول رو تغییر میده */
+        #intro {
             background-color: #050a19 !important;
         }
         
-        /* Make SVG icons visible */
-        svg {
-            stroke: #ffffff !important;
+        #intro,
+        #intro .intro-content__overline, 
+        #intro .intro-content__desc,
+        #intro h1 {
+            color: #ffffff !important;
         }
+        
+        /* دکمه اسکرول پایین صفحه اول */
+        .intro-scroll__text { color: #ffffff !important; }
+        .intro-scroll__line { background-color: #ffffff !important; }
     </style>
 
 </head>
@@ -142,8 +101,8 @@
                 <div class="row intro-content-wrap">  
                     <div class="column xl-11 intro-content">
                         <div class="intro-content__overline">Exploring the Cosmos with Data</div>
-                        <h1 class="intro-content__big-type">
-                            <span class="intro-content__text u-sr-hidden">Sepideh Sepehri</span>
+                        <h1 class="intro-content__big-type" style="color: #ffffff;">
+                            Sepideh Sepehri
                         </h1>
                         <p class="intro-content__desc lead">
                             Hello, I'm Sepideh Sepehri — an astrophysicist and data analyst specializing in high-redshift universe research and machine learning applications. I combine wide-field extragalactic imaging, photometric catalogs, and statistical modeling to uncover the role of galaxy mergers.
@@ -198,8 +157,8 @@
 
                             <div class="available-block-wrap">
                                 <div class="available-block pulse">
-                                    <div class="dot" style="background-color: #d97746;"></div>
-                                    <span class="available-text" style="color: #ffffff;">Open to PhD Opportunities</span>
+                                    <div class="dot"></div>
+                                    <span class="available-text">Open to PhD Opportunities</span>
                                 </div> 
                             </div> <!--end available-block-wrap -->                            
                         </div> <!--end s-about__main -->
@@ -548,7 +507,7 @@
                             Back to top
                             </span>                            
                             <span class="ss-back-to-top__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
                             </span>  
                         </a>                      
                     </p>
@@ -591,7 +550,7 @@
                         <p>
                             <a class="modal__link" id="modal-link" href="#" target="_blank">
                                 Project Link
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></svg>
                             </a>
                         </p>
                     </div>
