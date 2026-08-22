@@ -179,73 +179,88 @@
 
             </div> <!-- پایان s-about -->  
                     
+<!-- # works
+================================================== -->
+<section id="works" class="s-works target-section">
+
+    <div id="profile-experience" class="s-profile-block s-profile-block--start work-experience container">
+
+        <div class="row s-profile-block__content">
             
-            
-            <!-- # پژوهش‌ها
-        ================================================== -->
-        <section id="works" class="s-works target-section">
+            <div class="column xl-8 md-12 s-profile-block__content-end">
+                <div class="grid-cols info-list">
 
-            <div id="profile-experience" class="s-profile-block s-profile-block--start work-experience container">
+                    <div class="grid-cols__column info-card info-card--work">
+                        <div class="info-card__header">
+                            <h5 class="info-card__title">تحول کهکشان‌ها</h5>
+                            <p class="info-card__entity">دانشگاه پادوا</p>
+                            <p class="info-card__date">اکتبر ۲۰۲۴ — ژوئیه ۲۰۲۵</p>
+                        </div>
+                        <p class="info-card__desc">
+                            حدود ۵۰۰ هزار کهکشان را از میدان‌های ASTRODEEP-JWST بررسی کردم تا فراوانی جفت‌های کهکشانیِ در حال ادغام را تا انتقال‌به‌سرخ حدود z~10 اندازه‌گیری کنم. پایپ‌لاین‌های اختصاصی پایتون با استفاده از Astropy، NumPy و SciPy برای ادغام کاتالوگ‌ها، جست‌وجوی کهکشان‌های همدم و ارزیابی عدم‌قطعیت‌های آماری توسعه دادم.
+                        </p>
+                    </div>
 
-                <div class="row s-profile-block__content">
-
-                    <div class="column xl-4 md-12 s-profile-block__content-start">
-                       <h2 data-num="02" class="section-title">تجربه</h2> 
-                    </div> <!-- پایان s-profile-block__content-start -->
-
-                    <div class="column xl-8 md-12 s-profile-block__content-end">
+                    <div class="grid-cols__column info-card info-card--work">
                         <div class="grid-cols info-list">
+
                             <div class="grid-cols__column info-card info-card--work">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">پژوهشگر مستقل</h5>
-                                    <p class="info-card__entity">یادگیری ماشین</p>
+                                    <h5 class="info-card__title">یادگیری ماشین</h5>
+                                    <p class="info-card__entity">پژوهشگر مستقل</p>
                                     <p class="info-card__date">اوت ۲۰۲۵ — تاکنون</p>
                                 </div>
                                 <p class="info-card__desc">
-                                بررسی کاربردهای یادگیری ماشین در ریخت‌شناسی کهکشان‌ها و شناسایی ادغام‌ها. پیاده‌سازی مدل‌های رگرسیون، طبقه‌بندی و خوشه‌بندی با استفاده از ckdTree و Scikit-learn.
+                                    کاربردهای یادگیری ماشین در بررسی ریخت‌شناسی کهکشان‌ها و شناسایی ادغام‌های کهکشانی را بررسی می‌کنم. مدل‌های رگرسیون، طبقه‌بندی و خوشه‌بندی را با استفاده از cKDTree و Scikit-learn پیاده‌سازی کرده‌ام.
                                 </p>
                             </div>
 
                             <div class="grid-cols__column info-card info-card--work">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">پژوهشگر (امواج گرانشی)</h5>
-                                    <p class="info-card__entity">دانشگاه پادووا</p>
+                                    <h5 class="info-card__title">امواج گرانشی</h5>
+                                    <p class="info-card__entity">دانشگاه پادوا</p>
                                     <p class="info-card__date">مارس ۲۰۲۴ — ژوئیه ۲۰۲۴</p>
                                 </div>
                                 <p class="info-card__desc">
-                                بررسی تولید امواج گرانشی با استفاده از معادلات بولتزمن و ارزیابی قابلیت آشکارسازی سیگنال‌ها با LISA و تلسکوپ اینشتین.
+                                    سازوکار تولید امواج گرانشی را با استفاده از معادلات بولتزمن بررسی کردم و قابلیت آشکارسازی سیگنال‌ها را با LISA و تلسکوپ اینشتین ارزیابی کردم.
                                 </p>
                             </div>
 
                             <div class="grid-cols__column info-card info-card--work">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">پژوهشگر (گذر سیارات فراخورشیدی)</h5>
-                                    <p class="info-card__entity">دانشگاه پادووا</p>
+                                    <h5 class="info-card__title">گذر سیارات فراخورشیدی</h5>
+                                    <p class="info-card__entity">دانشگاه پادوا</p>
                                     <p class="info-card__date">اکتبر ۲۰۲۳ — ژانویه ۲۰۲۴</p>
                                 </div>
                                 <p class="info-card__desc">
-                                مدل‌سازی منحنی نوری سیاره فراخورشیدی WASP-12b با استفاده از فوتومتری TESS و TASTE. استفاده از Python به همراه batman و emcee برای برآورد پارامترها با روش MCMC.
+                                    مدل‌سازی منحنی نوری سیاره فراخورشیدی WASP-12b را با استفاده از داده‌های فتومتری TESS و TASTE انجام دادم. برای برآورد پارامترها با روش MCMC، از پایتون و کتابخانه‌های batman و emcee استفاده کردم.
                                 </p>
                             </div>
 
                             <div class="grid-cols__column info-card info-card--work">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">تیم ایستگاه زمینی</h5>
+                                    <h5 class="info-card__title">تیم ایستگاه زمینی ماهواره</h5>
                                     <p class="info-card__entity">CubeSats (برنامه ESA)</p>
                                     <p class="info-card__date">فوریه ۲۰۲۳ — سپتامبر ۲۰۲۳</p>
                                 </div>
                                 <p class="info-card__desc">
-                                همکاری در عملیات ایستگاه زمینی برای یک CubeSat تحت حمایت ESA. کسب تجربه در زمینه نرم‌افزارهای کنترل، بودجه لینک و سامانه‌های VHF/UHF.
+                                    در عملیات ایستگاه زمینی یک ماهواره CubeSat تحت حمایت ESA فعالیت کردم. در این پروژه با نرم‌افزارهای کنترل، محاسبات بودجه لینک ارتباطی و سامانه‌های VHF/UHF تجربه کسب کردم.
                                 </p>
-                            </div>  
+                            </div>
+
                         </div>
-                    </div>  <!-- پایان s-profile-block__content-end -->
+                    </div>
 
-                </div> <!-- پایان row -->
+                </div>
+            </div> <!-- end s-profile-block__content-end -->
 
-            </div> <!-- پایان work-experience -->
+        </div> <!-- end row -->
 
+    </div> <!-- end work-experience -->
 
+</section>
+            
+            
             <div id="profile-education" class="s-profile-block education container">
 
                 <div class="row s-profile-block__content">
