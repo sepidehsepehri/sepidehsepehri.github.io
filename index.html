@@ -62,7 +62,6 @@
     ================================================== -->
     <div id="page" class="s-pagewrap is-home">
 
-
 <!-- # site header 
         ================================================== -->
         <header class="s-header">
@@ -70,16 +69,28 @@
             <div class="container s-header__content">
                 
                 <div class="s-header__block">
-                    <!-- Updated container to force inline alignment -->
-                    <div class="header-brand" style="display: flex; align-items: center; justify-content: flex-start;">
-                        <a class="header-brand__link" href="index.html" style="margin-right: 15px; display: inline-block;">
+                    <!-- قرار دادن اسم و پرچم در یک ردیف -->
+                    <div class="header-brand" style="display: flex; align-items: center;">
+                        <a class="header-brand__link" href="index.html">
                             <span class="header-brand__text">Sepideh Sepehri</span>
                         </a>
-                        <!-- Flag link aligned vertically -->
-                        <a href="index-fa.html" title="نسخه فارسی" style="display: inline-flex; align-items: center; height: 100%;">
-                            <img src="images/shir-khorshid.svg.webp" alt="Persian" style="height: 24px; width: auto; vertical-align: middle; margin-top: 2px;">
+                        
+                        <!-- لینک پرچم با قابلیت تنظیم دقیق ابعاد و مختصات X و Y -->
+                        <a href="index-fa.html" title="نسخه فارسی">
+                            <img src="images/shir-khorshid.svg.webp" alt="Persian" style="
+                                width: 35px; /* اندازه پرچم - میتونی بزرگتر یا کوچیکترش کنی */
+                                height: auto;
+                                /* 
+                                  تابع translate(X, Y):
+                                  عدد اول (15px): حرکت در محور X (چپ و راست). عدد مثبت میره راست، منفی میره چپ.
+                                  عدد دوم (8px): حرکت در محور Y (بالا و پایین). عدد مثبت میاد پایین، منفی میره بالا.
+                                  با تغییر این دو عدد پرچم رو دقیقا تنظیم کن!
+                                */
+                                transform: translate(15px, 8px); 
+                            ">
                         </a>
                     </div>
+
                     <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
                 </div> <!-- end s-header__block -->
             
