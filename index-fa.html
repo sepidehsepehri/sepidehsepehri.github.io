@@ -1,1 +1,760 @@
+<!DOCTYPE html>
+<html lang="fa" class="no-js" >
+<head>
 
+    <!--- نیازهای پایه صفحه
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سپیده سپهری</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Dark Mode Override Styles (Only for Intro) -->
+    <style>
+        /* فقط رنگ پس‌زمینه و متن‌های بخش اول رو تغییر میده */
+        #intro {
+            background-color: #050a19 !important;
+        }
+        
+        #intro,
+        #intro .intro-content__overline, 
+        #intro .intro-content__desc,
+        #intro h1 {
+            color: #ffffff !important;
+        }
+        
+        /* دکمه اسکرول پایین صفحه اول */
+        .intro-scroll__text { color: #ffffff !important; }
+        .intro-scroll__line { background-color: #ffffff !important; }
+    </style>
+
+</head>
+
+<body id="top">
+    
+    <!-- پیش‌بارگذاری
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- قاب صفحه
+    ================================================== -->
+    <div id="page" class="s-pagewrap is-home">
+
+<!-- # سربرگ سایت 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="container s-header__content">
+                
+                <div class="s-header__block">
+                    <!-- قرار دادن اسم و پرچم در یک ردیف -->
+                    <div class="header-brand" style="display: flex; align-items: center;">
+                        <a class="header-brand__link" href="index.html">
+                            <span class="header-brand__text">سپیده سپهری</span>
+                        </a>
+                        
+                        <!-- لینک پرچم با قابلیت تنظیم دقیق ابعاد و مختصات X و Y -->
+                        <a href="index-fa.html" title="نسخه فارسی">
+                            <img src="images/shir-khorshid.svg.webp" alt="فارسی" style="
+                                width: 25px; /* اندازه پرچم - میتونی بزرگتر یا کوچیکترش کنی */
+                                height: auto;
+                                /* 
+                                  تابع translate(X, Y):
+                                  عدد اول (15px): حرکت در محور X (چپ و راست). عدد مثبت میره راست، منفی میره چپ.
+                                  عدد دوم (42px): حرکت در محور Y (بالا و پایین). عدد مثبت میاد پایین، منفی میره بالا.
+                                  با تغییر این دو عدد پرچم رو دقیقا تنظیم کن!
+                                */
+                                transform: translate(15px, 8px); 
+                            ">
+                        </a>
+                    </div>
+
+                    <a class="header-menu-toggle" href="#0"><span>منو</span></a>
+                </div> <!-- پایان s-header__block -->
+            
+                <nav class="header-nav">    
+                    <ul class="header-nav__links">
+                        <li class="current"><a class="smoothscroll" href="#intro">معرفی</a></li>
+                        <li><a class="smoothscroll" href="#profile">درباره من</a></li>
+                        <li><a class="smoothscroll" href="#works">پژوهش</a></li>
+                        <li><a class="smoothscroll" href="#astrotourism">گردشگری نجومی</a></li>
+                        <li><a class="smoothscroll" href="#beyondscience">فراتر از علم</a></li>
+                        <li><a href="mailto:sepidehsepehri75@gmail.com">در تماس باشید</a></li>
+                    </ul> <!-- پایان header-nav__links -->                
+                </nav> <!-- پایان header-nav -->         
+            
+            </div> <!-- پایان s-header__content -->
+
+        </header> <!-- پایان s-header -->
+
+        <!-- # معرفی
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="container s-intro__inner">
+
+                <div class="row intro-content-wrap">  
+                    <div class="column xl-11 intro-content">
+                        <div class="intro-content__overline" style="margin-bottom: 200px;">کاوش کیهان با داده‌ها</div>
+
+                        <p class="intro-content__desc lead">
+                            سلام، من سپیده سپهری هستم — اخترفیزیک‌دان و تحلیل‌گر داده با تخصص در پژوهش درباره جهان با انتقال به سرخ بالا و کاربردهای یادگیری ماشین. من تصویربرداری‌های گسترده از میدان‌های برون‌کهکشانی، کاتالوگ‌های فوتومتریک و مدل‌سازی آماری را با یکدیگر ترکیب می‌کنم تا نقش ادغام کهکشان‌ها را آشکار کنم.
+                        </p>
+                    </div> <!-- پایان intro-main -->               
+                </div> <!-- پایان intro-main-wrap -->
+
+            </div> <!-- پایان s-intro__inner -->   
+            
+            <a class="intro-scroll smoothscroll" href="#profile">
+                <div class="intro-scroll__text">پایین بروید</div>
+                <div class="intro-scroll__line"></div>
+            </a> <!-- پایان intro-scroll -->
+
+        </section> <!-- پایان s-intro -->
+
+        <!-- # پروفایل
+        ================================================== -->
+        <section id="profile" class="s-profile target-section">
+
+            <div id="profile-about" class="s-about">
+
+                <div class="s-about__inner container">
+
+                    <div class="grid-block">
+
+                        <div class="grid-block__item s-about__header">
+                            <h2 data-num="01" class="section-title">درباره من</h2>
+                        </div> <!-- پایان s-about__header -->
+
+                        <div class="grid-block__item s-about__media">
+                            <figure class="about-profile-pic">
+                                <img src="images/profile-pic.jpg" srcset="images/profile-pic.jpg 1x, 
+                                          images/profile-pic@2x.jpg 2x" alt="عکس پروفایل">
+                            </figure>
+                        </div> <!-- پایان s-about__media -->
+
+                        <div class="grid-block__item s-about__intro">
+                            <p class="lead">
+                            پیوند میان کیهان و کد. من از ابزارهای محاسباتی مدرن و روش‌های آماری برای پردازش و تحلیل داده‌های نجومی در مقیاس بزرگ استفاده می‌کنم.
+                            </p>
+                        </div> <!-- پایان s-about__intro -->
+
+                        <div class="grid-block__item s-about__main">
+                            <p>
+                            من دارای مدرک کارشناسی ارشد اخترفیزیک و کیهان‌شناسی از دانشگاه پادووا هستم. تمرکز اصلی پژوهش من بر تحول کهکشان‌هاست و در پایان‌نامه‌ام حدود ۵۰۰٬۰۰۰ کهکشان از ASTRODEEP-JWST را برای اندازه‌گیری کسر جفت‌های ادغام‌شونده تا انتقال به سرخ z~10 تحلیل کردم. برای انجام این کار، خطوط پردازش اختصاصی در Python توسعه دادم که Astropy، NumPy و SciPy را برای ادغام کاتالوگ‌ها و محاسبه عدم‌قطعیت‌های آماری با یکدیگر ترکیب می‌کردند.
+                            </p>
+                    
+                            <p>
+                            در حال حاضر، تمرکز من به سمت پژوهش مستقل درباره کاربردهای یادگیری ماشین در داده‌های نجومی گسترش یافته است. من در حال بررسی مدل‌های رگرسیون، طبقه‌بندی و خوشه‌بندی با استفاده از Scikit-learn هستم تا شناسایی ریخت‌شناسی کهکشان‌ها و ادغام‌های کهکشانی را بهبود دهم.
+                            </p>
+
+                            <div class="available-block-wrap">
+                                <a href="Sepideh_Sepehri_CV_PHD.pdf" download class="available-block pulse" style="text-decoration: none; cursor: pointer;">
+                                    <div class="dot"></div>
+                                <span class="available-text">دانلود رزومه من</span>
+                            </a> 
+                            </div> <!-- پایان available-block-wrap -->                            
+                        </div> <!-- پایان s-about__main -->
+
+                    </div> <!-- پایان grid-block -->
+
+                </div> <!-- پایان s-about__inner -->
+
+            </div> <!-- پایان s-about -->  
+                    
+            
+            
+            <!-- # پژوهش‌ها
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div id="profile-experience" class="s-profile-block s-profile-block--start work-experience container">
+
+                <div class="row s-profile-block__content">
+
+                    <div class="column xl-4 md-12 s-profile-block__content-start">
+                       <h2 data-num="02" class="section-title">تجربه</h2> 
+                    </div> <!-- پایان s-profile-block__content-start -->
+
+                    <div class="column xl-8 md-12 s-profile-block__content-end">
+                        <div class="grid-cols info-list">
+                            <div class="grid-cols__column info-card info-card--work">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">پژوهشگر مستقل</h5>
+                                    <p class="info-card__entity">یادگیری ماشین</p>
+                                    <p class="info-card__date">اوت ۲۰۲۵ — تاکنون</p>
+                                </div>
+                                <p class="info-card__desc">
+                                بررسی کاربردهای یادگیری ماشین در ریخت‌شناسی کهکشان‌ها و شناسایی ادغام‌ها. پیاده‌سازی مدل‌های رگرسیون، طبقه‌بندی و خوشه‌بندی با استفاده از ckdTree و Scikit-learn.
+                                </p>
+                            </div>
+
+                            <div class="grid-cols__column info-card info-card--work">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">پژوهشگر (امواج گرانشی)</h5>
+                                    <p class="info-card__entity">دانشگاه پادووا</p>
+                                    <p class="info-card__date">مارس ۲۰۲۴ — ژوئیه ۲۰۲۴</p>
+                                </div>
+                                <p class="info-card__desc">
+                                بررسی تولید امواج گرانشی با استفاده از معادلات بولتزمن و ارزیابی قابلیت آشکارسازی سیگنال‌ها با LISA و تلسکوپ اینشتین.
+                                </p>
+                            </div>
+
+                            <div class="grid-cols__column info-card info-card--work">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">پژوهشگر (گذر سیارات فراخورشیدی)</h5>
+                                    <p class="info-card__entity">دانشگاه پادووا</p>
+                                    <p class="info-card__date">اکتبر ۲۰۲۳ — ژانویه ۲۰۲۴</p>
+                                </div>
+                                <p class="info-card__desc">
+                                مدل‌سازی منحنی نوری سیاره فراخورشیدی WASP-12b با استفاده از فوتومتری TESS و TASTE. استفاده از Python به همراه batman و emcee برای برآورد پارامترها با روش MCMC.
+                                </p>
+                            </div>
+
+                            <div class="grid-cols__column info-card info-card--work">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">تیم ایستگاه زمینی</h5>
+                                    <p class="info-card__entity">CubeSats (برنامه ESA)</p>
+                                    <p class="info-card__date">فوریه ۲۰۲۳ — سپتامبر ۲۰۲۳</p>
+                                </div>
+                                <p class="info-card__desc">
+                                همکاری در عملیات ایستگاه زمینی برای یک CubeSat تحت حمایت ESA. کسب تجربه در زمینه نرم‌افزارهای کنترل، بودجه لینک و سامانه‌های VHF/UHF.
+                                </p>
+                            </div>  
+                        </div>
+                    </div>  <!-- پایان s-profile-block__content-end -->
+
+                </div> <!-- پایان row -->
+
+            </div> <!-- پایان work-experience -->
+
+
+            <div id="profile-education" class="s-profile-block education container">
+
+                <div class="row s-profile-block__content">
+
+                    <div class="column xl-4 md-12 s-profile-block__content-start">
+                       <h2 data-num="03" class="section-title">تحصیلات</h2> 
+                    </div> <!-- پایان s-profile-block__content-start -->
+
+                    <div class="column xl-8 md-12 s-profile__content-end">
+                        <div class="grid-cols info-list">
+
+                            <div class="grid-cols__column info-card info-card--education">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">کارشناسی ارشد اخترفیزیک و کیهان‌شناسی</h5>
+                                    <p class="info-card__entity">دانشگاه پادووا، ایتالیا</p>
+                                    <p class="info-card__date">اکتبر ۲۰۲۲ — ژوئیه ۲۰۲۵</p>
+                                </div>
+                                <p class="info-card__desc">
+                                پایان‌نامه: «نقش ادغام کهکشان‌ها در جهان با انتقال به سرخ بالا با استفاده از میدان‌های عمیق برون‌کهکشانی JWST». تحت نظارت پروفسور جولیا رودیکیرو.
+                                </p>
+                            </div>
+
+                            <div class="grid-cols__column info-card info-card--education">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">کارشناسی فیزیک</h5>
+                                    <p class="info-card__entity">دانشگاه صنعتی امیرکبیر، ایران</p>
+                                    <p class="info-card__date">سپتامبر ۲۰۱۵ — سپتامبر ۲۰۲۰</p>
+                                </div>
+                                <p class="info-card__desc">
+                                کسب دانش پایه در فیزیک، ریاضیات و مبانی اولیه برنامه‌نویسی که زمینه لازم برای پژوهش‌های پیشرفته در کیهان‌شناسی را فراهم کرد.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>  <!-- پایان s-profile-block__content-end -->
+
+                </div> <!-- پایان row -->
+
+            </div> <!-- پایان education -->
+
+
+            <div id="profile-services" class="s-profile-block services container">
+
+                <div class="row s-profile-block__content">
+
+                    <div class="column xl-4 md-12 s-profile-block__content-start">
+                       <h2 data-num="04" class="section-title">مهارت‌های فنی</h2> 
+                    </div> <!-- پایان s-profile-block__content-start -->
+
+                    <div class="column xl-8 md-12 s-profile-block__content-end">
+                        <div class="grid-cols info-list info-list--services">
+
+                            <div class="grid-cols__column info-card info-card--services">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">برنامه‌نویسی Python</h5>
+                                </div>
+                                <p class="info-card__desc">
+                                تسلط پیشرفته بر استفاده از Astropy، NumPy، SciPy، Pandas، Matplotlib و astroML برای تحلیل جامع داده‌ها و خودکارسازی خطوط پردازش.
+                                </p>
+                            </div>                        
+
+                            <div class="grid-cols__column info-card info-card--services">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">یادگیری ماشین</h5>
+                                </div>
+                                <p class="info-card__desc">
+                                استفاده از مدل‌های scikit-learn و KDTree برای رگرسیون، طبقه‌بندی و خوشه‌بندی در مجموعه‌داده‌های پیچیده نجومی.
+                                </p>
+                            </div>                        
+
+                            <div class="grid-cols__column info-card info-card--services">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">نرم‌افزارهای نجومی</h5>
+                                </div>
+                                <p class="info-card__desc">
+                                تسلط بر استفاده از ابزارهای تخصصی مانند TOPCAT، SAOImage DS9، SpecPro و SExtractor.
+                                </p>
+                            </div>                        
+
+                            <div class="grid-cols__column info-card info-card--services">
+                                <div class="info-card__header">
+                                    <h5 class="info-card__title">تحلیل رصدی</h5>
+                                </div>
+                                <p class="info-card__desc">
+                                تجربه در مدل‌سازی منحنی نوری (MCMC) و انجام فوتومتری و طیف‌سنجی عملی در رصدخانه آسیاغو.
+                                </p>
+                            </div>                          
+                             
+                        </div>
+                    </div>  <!-- پایان s-profile__content-end -->
+
+                </div> <!-- پایان row -->
+
+            </div> <!-- پایان services -->
+
+             <div id="profile-stats" class="s-profile-block s-profile-block--end stats container">
+                
+                <div class="row">
+                    <div class="column xl-4 md-12">                        
+                    </div>
+                    <div class="column xl-8 md-12 stats-group">
+                        <div class="stat-item">
+                            <div class="stat-item__value">500K+</div>
+                            <div class="stat-item__label">کهکشان<br>تحلیل‌شده</div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-item__value">4+</div>
+                            <div class="stat-item__label">سال<br>تجربه پژوهشی</div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-item__value">3+</div>
+                            <div class="stat-item__label">خط پردازش داده<br>توسعه‌یافته</div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-item__value">1</div>
+                            <div class="stat-item__label">مقاله<br>در دست انتشار</div>
+                        </div>                        
+                    </div> <!-- پایان stats-group -->
+                </div>
+                
+            </div> <!-- پایان stats -->
+        
+        </section> <!-- پایان s-profile -->
+
+
+
+            <div class="container">                
+                <div class="row s-works__header">
+                    <div class="column xl-4 md-12 s-works__header-start">
+                        <h2 data-num="05" class="section-title">پروژه‌های منتخب</h2>
+                    </div>
+
+                    <div class="column xl-8 md-12 s-works__header-end">
+                        <p class="lead">
+                        مجموعه‌ای از پروژه‌های پژوهشی تحلیلی با تمرکز بر جهان اولیه، سامانه‌های سیاره‌ای فراخورشیدی و کاربرد یادگیری ماشین در اخترشناسی رصدی.
+                        </p>
+                    </div>
+                </div><!-- پایان s-works__header -->        
+            </div> <!-- پایان container -->
+
+ 
+<!-- # گردشگری نجومی
+        ================================================== -->
+        <style>
+            /* استایل‌های بخش Astro Tourism (تصویر تمام‌صفحه) */
+            #astrotourism {
+                background-image: url('images/astro-tour.png') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                min-height: 100vh; /* کل صفحه رو میگیره */
+                position: relative;
+                padding-top: 20vh !important; 
+                padding-bottom: 5vh !important;
+                border-top: none !important;
+            }
+            
+            /* یک لایه تیره ملایم روی عکس میندازه تا متن‌ها بهتر خونده بشن */
+            #astrotourism::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0, 0, 0, 0.4); 
+                z-index: 1;
+            }
+            
+            #astrotourism .container {
+                position: relative;
+                z-index: 2; 
+            }
+
+            /* نارنجی کردن تیتر */
+            #astrotourism h2, 
+            #astrotourism .section-title {
+                color: #d97746 !important; 
+                margin-top: 0;
+            }
+
+            /* روشن کردن متن و بزرگ‌تر کردن سایز فونت */
+            #astrotourism p, 
+            #astrotourism .lead {
+                color: #ffffff !important;
+                font-size: 1.8rem !important; 
+                line-height: 1.6 !important;
+                font-weight: 300;
+            }
+        </style>
+
+        <section id="astrotourism" class="s-profile target-section">
+            <div class="container">
+                <div class="row s-works__header">
+                    <div class="column xl-4 md-12 s-works__header-start">
+                        <h2 class="section-title">گردشگری نجومی</h2>
+                    </div>
+
+                    <div class="column xl-8 md-12 s-works__header-end">
+                        <p class="lead">
+                        چشم‌انداز من برای گردشگری نجومی، پیشینه من در اخترفیزیک را با تجربه عملی‌ام در بخش پرنشاط مهمان‌نوازی در رم ترکیب می‌کند. میزبانی از جوامع بین‌المللی و برگزاری رویدادهای روزانه در یک هاستل پرجنب‌وجوش به من آموخت که گرد هم آوردن فرهنگ‌های گوناگون تا چه اندازه قدرتمند است — روحیه‌ای از ارتباط و همبستگی که اکنون می‌خواهم آن را به آسمان شب منتقل کنم.
+                        </p>
+                        
+                        <p class="lead" style="margin-top: 2rem;">
+                        با تکیه بر طرح راهبردی جامع خود برای احیای زیرساخت‌های نجومی، هدف من تبدیل مکان‌های تاریخی، مانند کاروانسراهای باستانی، به «هتل-رصدخانه‌های» مدرن است. با ترکیب کمپ‌های آسمان تاریک با تجربه‌ای فراگیر از مهمان‌نوازی، می‌توانیم ترویج علم را به تجربه‌ای فراموش‌نشدنی از سفر تبدیل کنیم و یک «اقتصاد نجومی» پایدار ایجاد کنیم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+<!-- # فراتر از علم
+        ================================================== -->
+        <style>
+            /* استایل‌های اختصاصی برای روشن کردن بخش Beyond Science */
+            #beyondscience {
+                background-image: url('images/beyond-bg.png') !important;
+                background-color: #ffffff !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            /* تیره کردن تیترها */
+            #beyondscience h2, 
+            #beyondscience h3, 
+            #beyondscience h4,
+            #beyondscience .section-title,
+            #beyondscience .portfolio-item__title {
+                color: #111827 !important;
+            }
+
+            /* تیره کردن متن‌های معمولی */
+            #beyondscience p, 
+            #beyondscience .lead,
+            #beyondscience .portfolio-item__services li {
+                color: #374151 !important;
+            }
+
+            /* تغییر رنگ کارت‌های نقاشی برای زمینه روشن */
+            #beyondscience .portfolio-item {
+                background-color: rgba(0, 0, 0, 0.03) !important;
+                border-color: rgba(0, 0, 0, 0.1) !important;
+            }
+        </style>
+
+        <section id="beyondscience" class="s-works target-section" style="padding-top: 6rem;">
+            <div class="container">                
+                <div class="row s-works__header" style="margin-bottom: 4rem;">
+                    <div class="column xl-4 md-12 s-works__header-start">
+                        <h2 class="section-title">فراتر از علم</h2>
+                    </div>
+
+                    <div class="column xl-8 md-12 s-works__header-end">
+                        <p class="lead">
+                        زندگی من خارج از رصدخانه؛ از ساختن جامعه و سفر گرفته تا هنرهای تجسمی و داستان‌گویی دیجیتال.
+                        </p>
+                    </div>
+                </div>       
+            </div> 
+
+            <!-- جامعه و تجربیات -->
+            <div class="container" style="padding-bottom: 6rem;">
+                <div class="row">
+                    <div class="column xl-12 md-12">
+                        <h3 style="margin-bottom: 1.5rem;">جامعه و تجربیات</h3>
+                        <p>
+                        ارتباط با مردم در قلب کاری قرار دارد که انجام می‌دهم. با فعالیت در ایتالیا، از گرد هم آوردن گروه‌های متنوعی از مسافران و افراد محلی لذت می‌برم. چه برگزاری شب‌های پرنشاط آپریتیوو از دوشنبه تا جمعه باشد، چه هدایت شب‌های سرگرم‌کننده کوییز در روزهای شنبه، یا سازمان‌دهی پیاده‌روی‌های اجتماعی و آرامش‌بخش، این تجربه‌ها علاقه من به تبادل فرهنگی و ارتباط انسانی را تقویت می‌کنند.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- هنرهای تجسمی (شبکه نقاشی‌ها) -->
+            <div class="container" style="padding-bottom: 6rem;">
+                <h3 style="margin-bottom: 2rem; margin-left: 1.5rem;">هنرهای تجسمی</h3>
+                 <div class="container portfolio-group-wrap">
+                
+                <div class="grid-block portfolio-group">
+
+                    <div class="portfolio-item portfolio-item--featured" data-title="ادغام‌های با انتقال به سرخ بالا" data-images="images/folio/large/l-beauty-faith@2x.jpg" data-client="پایان‌نامه کارشناسی ارشد" data-date="ژوئیه ۲۰۲۵" data-link="https://github.com/SepidehSepehri">   
+                        <a href="#0" class="portfolio-item__link" aria-label="مشاهده جزئیات پروژه">
+                            <img src="images/folio/featured-beauty-faith.jpg" srcset="images/folio/featured-beauty-faith.jpg 1x, 
+                                      images/folio/featured-beauty-faith@2x.jpg 2x" alt="ادغام‌های با انتقال به سرخ بالا" class="portfolio-item__thumbnail">
+                            <span class="portfolio-item__title">تحلیل ادغام‌های کهکشانی با JWST</span>
+                        </a> <!-- portfolio-item__link -->  
+
+                        <div class="portfolio-item__details">
+                            <div class="portfolio-item__description">
+                                <p>
+                                حدود ۵۰۰٬۰۰۰ کهکشان از ASTRODEEP-JWST را برای اندازه‌گیری کسر جفت‌های ادغام‌شونده تا z~10 تحلیل کردم. برای ارزیابی شکل‌گیری ساختارهای محیطی در جهان اولیه، اصلاحات کامل بودن، عدم‌قطعیت‌های آماری و ارزیابی خطاهای سیستماتیک را اعمال کردم.
+                                </p>
+                            </div>
+
+                            <ul class="portfolio-item__services">
+                                <li>تحلیل داده</li>
+                                <li>خطوط پردازش Python</li>
+                            </ul>
+                        </div> <!-- portfolio-item__details -->                                 
+                    </div>   
+
+                    <div class="portfolio-item" data-title="مدل‌سازی گذر سیاره فراخورشیدی" data-images="images/folio/large/l-tropical@2x.jpg" data-client="آزمایشگاه اخترفیزیک II" data-date="ژانویه ۲۰۲۴" data-link="https://github.com/SepidehSepehri">  
+                        <a href="#0" class="portfolio-item__link" aria-label="مشاهده جزئیات پروژه">
+                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, 
+                                      images/folio/tropical@2x.jpg 2x" alt="گذر سیاره فراخورشیدی" class="portfolio-item__thumbnail">
+                            <span class="portfolio-item__title">تحلیل WASP-12b</span>
+                        </a>  <!-- portfolio-item__link -->  
+
+                        <div class="portfolio-item__details">
+                            <div class="portfolio-item__description">
+                                <p>
+                                مدل‌سازی منحنی نوری سیاره فراخورشیدی WASP-12b با استفاده از فوتومتری TESS و TASTE و کتابخانه‌های batman و emcee برای برآورد پارامترها با روش MCMC انجام شد.
+                                </p>
+                            </div>
+
+                            <ul class="portfolio-item__services">
+                                <li>فوتومتری</li>
+                                <li>برآورد MCMC</li>
+                            </ul>
+                        </div> <!-- portfolio-item__details -->  
+                    </div>
+                    
+                    <div class="portfolio-item" data-title="ریخت‌شناسی کهکشان با یادگیری ماشین" data-images="images/folio/large/l-grayscale@2x.jpg" data-client="پژوهش مستقل" data-date="اوت ۲۰۲۵">  
+                        <a href="#0" class="portfolio-item__link" aria-label="مشاهده جزئیات پروژه">
+                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, 
+                                      images/folio/grayscale@2x.jpg 2x" alt="یادگیری ماشین" class="portfolio-item__thumbnail">
+                            <span class="portfolio-item__title">یادگیری ماشین در اخترشناسی</span>
+                        </a> <!-- portfolio-item__link -->  
+
+                        <div class="portfolio-item__details">
+                            <div class="portfolio-item__description">
+                                <p>
+                                کاربرد مدل‌های رگرسیون، طبقه‌بندی و خوشه‌بندی با استفاده از ckdTree و Scikit-learn برای شناسایی خودکار ریخت‌شناسی کهکشان‌ها و ادغام‌های کهکشانی بررسی شد.
+                                </p>
+                            </div>
+
+                            <ul class="portfolio-item__services">
+                                <li>یادگیری ماشین</li>
+                                <li>Scikit-learn</li>
+                            </ul>
+                        </div> <!-- portfolio-item__details -->   
+                    </div>
+                
+                    <div class="portfolio-item" data-title="امواج گرانشی" data-images="images/folio/large/l-duality@2x.jpg" data-client="کیهان‌شناسی نظری" data-date="ژوئیه ۲۰۲۴" data-link="https://github.com/SepidehSepehri">  
+                        <a href="#0" class="portfolio-item__link" aria-label="مشاهده جزئیات پروژه">
+                            <img src="images/folio/duality.jpg" srcset="images/folio/duality.jpg 1x, 
+                                      images/folio/duality@2x.jpg 2x" alt="امواج گرانشی" class="portfolio-item__thumbnail">
+                            <span class="portfolio-item__title">قابلیت آشکارسازی امواج گرانشی</span>
+                        </a>  <!-- portfolio-item__link -->  
+
+                        <div class="portfolio-item__details">
+                            <div class="portfolio-item__description">
+                                <p>
+                                قابلیت آشکارسازی سیگنال‌های امواج گرانشی جهان اولیه با استفاده از LISA و تلسکوپ اینشتین ارزیابی شد و یافته‌ها به تورم کیهانی و شکل‌گیری ساختارهای کیهانی مرتبط شدند.
+                                </p>
+                            </div>
+
+                            <ul class="portfolio-item__services">
+                                <li>کیهان‌شناسی نظری</li>
+                                <li>تحلیل سیگنال</li>
+                            </ul>
+                        </div> <!-- portfolio-item__details -->   
+                    </div>
+                
+                </div> <!-- پایان portfolio-group -->
+            </div> <!-- پایان portfolio-group-wrap -->             
+            
+        </section> <!-- پایان s-works --> 
+
+            <!-- یوتیوب و رسانه -->
+            <div class="container" style="padding-bottom: 4rem;">
+                <div class="row">
+                    <div class="column xl-12 md-12">
+                        <h3 style="margin-bottom: 1.5rem;">رسانه و یوتیوب</h3>
+                        <p>
+                        من عاشق ثبت و به اشتراک گذاشتن مسیر زندگی‌ام هستم. ویدئوهایم را برای مستندسازی سفرها، بینش‌های علمی و سبک زندگی‌ام تدوین می‌کنم و هدفم خلق محتوایی جذاب است که داستانی را روایت کند.
+                        </p>
+                        
+                        <!-- محل قرارگیری ویدئوهای یوتیوب -->
+                        <div style="background-color: rgba(0,0,0,0.03); padding: 4rem; text-align: center; border-radius: 8px; border: 1px dashed rgba(0,0,0,0.2); margin-top: 2rem;">
+                            <span style="color: #4b5563; font-size: 1.1rem;"><iframe width="560" height="315" src="https://www.youtube.com/embed/6q9_tIpEnHc?si=qjUHbW0grvpOCUz7" title="پخش‌کننده ویدئوی یوتیوب" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- پایان beyond science -->
+            
+
+        <!-- # فوتر 
+        ================================================== -->
+        <footer id="footer" class="container s-footer">  
+
+            <div class="row s-footer__top">
+
+                <div class="column xl-6 md-12 s-footer__top-start">
+                    <h5 class="footer-overline">در تماس باشید</h5>
+                    <p class="lead">
+                        اگر به گفتگو درباره کیهان‌شناسی با انتقال به سرخ بالا، همکاری‌های پژوهشی احتمالی یا حتی فقط یک سلام علاقه‌مند هستید، خوشحال می‌شوم با شما در ارتباط باشم.
+                    </p>
+
+                    <div class="footer-buttons">
+                        <a href="mailto:sepidehsepehri75@gmail.com" class="btn">ارسال ایمیل</a>
+                    </div>
+                </div> <!-- پایان s-footer__top-start -->
+
+                <div class="grid-cols column xl-3 lg-4 md-12 s-footer__top-end">
+
+                    <div class="footer-block grid-cols__column">
+                        <h5 class="footer-title">اطلاعات تماس</h5>
+                        <ul class="link-list">
+                            <li><a href="mailto:sepidehsepehri75@gmail.com">sepidehsepehri75@gmail.com</a></li>
+                            <li>مستقر در ایتالیا</li>
+                        </ul>
+                    </div>
+               
+                    <div class="footer-block grid-cols__column">
+                        <h5 class="footer-title">من را آنلاین پیدا کنید</h5>
+                        <ul class="footer-social">
+                            <li><a href="https://www.linkedin.com/in/sepidehsepehri/">LinkedIn</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=oOOZoukAAAAJ&hl=en">Google Scholar</a></li>
+                            <li><a href="https://github.com/SepidehSepehri">Github</a></li>
+                            <li><a href="https://www.instagram.com/astrosepide/">Instagram</a></li>
+                        </ul>
+                    </div>
+                  
+                </div> <!-- پایان s-footer__top-end -->
+
+            </div> <!-- پایان s-foooter__top -->
+
+            <div class="row s-footer__bottom"> 
+
+                <div class="column xl-6 tab-12 s-footer__bottom-start">
+                    <p class="ss-copyright">
+                        <span>© سپیده سپهری ۲۰۲۶</span> 
+                        <span>طراحی توسط <a href="https://styleshout.com/">StyleShout</a></span>
+                    </p>
+                </div>
+
+                <div class="column xl-3 lg-4 md-6 s-footer__bottom-end">
+                    <p class="ss-back-to-top">
+                        <a href="#top" class="ss-back-to-top__link smoothscroll">
+                            <span class="ss-back-to-top__text">                                
+                            بازگشت به بالا
+                            </span>                            
+                            <span class="ss-back-to-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                            </span>  
+                        </a>                      
+                    </p>
+                </div>
+
+            </div> <!-- پایان s-footer__bottom -->
+
+        </footer> <!-- پایان s-footer -->        
+
+    </div> <!-- پایان page-wrap -->
+
+
+    <!-- پنجره پروژه
+    ================================================== -->
+    <div class="modal" id="portfolio-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+                
+        <button class="modal__close-btn" aria-label="بستن پنجره"></button>
+
+        <div class="modal__content">
+            <div class="modal__image-container" id="modal-image-container"></div>
+            <div class="modal__text-container" id="modal-text-container">
+                
+                <h3 class="modal__title" id="modal-title"></h3>
+                <div class="modal__description-text" id="modal-description-text"></div>
+
+                <div class="modal__info-group grid-cols" id="modal-info-group"> 
+                    <div class="modal__info grid-cols__column">
+                        <h5>دسته‌بندی</h5>
+                        <ul id="modal-services"></ul>
+                    </div>                     
+                    <div class="modal__info grid-cols__column">
+                        <h5>پروژه</h5>
+                        <p id="modal-client"></p>
+                    </div>
+                    <div class="modal__info grid-cols__column">
+                        <h5>تاریخ</h5>
+                        <p id="modal-date"></p>
+                    </div>
+                    <div class="modal__info grid-cols__column modal__link-container" id="modal-link-container">
+                        <p>
+                            <a class="modal__link" id="modal-link" href="#" target="_blank">
+                                لینک پروژه
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></svg>
+                            </a>
+                        </p>
+                    </div>
+                </div> <!-- پایان modal__info-group -->
+
+            </div> <!-- پایان modal__text-container -->
+        </div> <!-- پایان modal__content -->
+    </div> <!-- پایان modal -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
