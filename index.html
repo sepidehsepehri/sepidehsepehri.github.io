@@ -402,7 +402,7 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                 border-top: none !important;
             }
             
-            /* یک لایه تیره ملایم روی عکس میندازه تا متن‌ها بهتر خونده بشن */
+            /* لایه تیره ملایم روی عکس */
             #astrotourism::before {
                 content: "";
                 position: absolute;
@@ -423,7 +423,7 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                 margin-top: 0;
             }
 
-            /* روشن کردن متن و بزرگ‌تر کردن سایز فونت */
+            /* استایل متن‌ها */
             #astrotourism p, 
             #astrotourism .lead {
                 color: #ffffff !important;
@@ -431,22 +431,51 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                 line-height: 1.6 !important;
                 font-weight: 300;
             }
+
+            /* --- استایل نوار تمام‌عرضِ به زودی --- */
+            .astro-banner {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه‌شفاف تاریک */
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 1.5rem 0;
+                text-align: center;
+                z-index: 3;
+                backdrop-filter: blur(5px); /* افکت شیشه‌ای روی ستاره‌ها */
+            }
         </style>
 
         <section id="astrotourism" class="s-profile target-section">
             <div class="container">
                 <div class="row s-works__header">
                     <div class="column xl-4 md-12 s-works__header-start">
-                        <h2 data-num="06" class="section-title">Astro Tourism</h2>
+                        <h2 data-num="04" class="section-title">Astro Tourism</h2>
                     </div>
                     <div class="column xl-8 md-12 s-works__header-end">
                         <p class="lead">
-My vision for Astro Tourism bridges my expertise in extragalactic astrophysics with my practical experience in Rome's hospitality sector. Curating experiences for international travelers, has shown me how shared experiences build global communities. I want to bring this exact dynamic to science outreach.
+                        My vision for Astro Tourism merges my background in observational cosmology with my hands-on experience in Rome's vibrant hospitality sector. Bringing diverse cultures together—whether through hosting lively Aperitivo evenings, Saturday Quiz nights, or engaging social walks—has taught me the profound power of human connection. I now aim to elevate that spirit of connection to the night sky.
                         </p>
                         
                         <p class="lead" style="margin-top: 2rem;">
-Drawing from my comprehensive proposal for modernizing astronomical infrastructure, I envision transforming historical caravanserais in Iran and Silk Road into state-of-the-art 'hotel-observatories'. By combining dark sky stargazing with immersive digital storytelling and interactive planetarium experiences, my goal is to make the cosmos deeply accessible, driving both public scientific literacy and a sustainable 'Astro-Economy.                        </p>
+                        Inspired by my strategic proposal to revitalize astronomical infrastructure, my goal is to transform historical Silk Road caravanserais into modern 'hotel-observatories'. By integrating dark sky camps in pristine locations like the Lut Desert with immersive hospitality, we can honor the legacy of ancient observatories like Maragheh, turning science outreach into an unforgettable travel experience and driving a sustainable 'Astro-Economy'.
+                        </p>
                     </div>
+                </div>
+            </div>
+
+            <!-- نوار تمام‌عرض پایین سکشن -->
+            <div class="astro-banner">
+                <div style="display: inline-flex; align-items: center; justify-content: center;">
+                    <!-- نقطه چشمک‌زن -->
+                    <div class="pulse" style="display: inline-block; margin-right: 15px;">
+                        <div class="dot" style="background-color: #d97746; margin: 0; position: relative;"></div>
+                    </div>
+                    <!-- متن نوار -->
+                    <span style="color: #ffffff; font-weight: 300; font-size: 1.1rem; letter-spacing: 4px; text-transform: uppercase;">
+                        More Updates on the Horizon
+                    </span>
                 </div>
             </div>
         </section>
