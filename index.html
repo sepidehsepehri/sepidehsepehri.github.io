@@ -70,14 +70,14 @@
             <div class="container s-header__content">
                 
                 <div class="s-header__block">
-                    <!-- کانتینر جدید برای هم‌تراز کردن اسم و پرچم -->
-                    <div class="header-brand" style="display: flex; align-items: center; gap: 15px;">
-                        <a class="header-brand__link" href="index.html">
+                    <!-- Updated container to force inline alignment -->
+                    <div class="header-brand" style="display: flex; align-items: center; justify-content: flex-start;">
+                        <a class="header-brand__link" href="index.html" style="margin-right: 15px; display: inline-block;">
                             <span class="header-brand__text">Sepideh Sepehri</span>
                         </a>
-                        <!-- لینک نسخه فارسی با پرچم شیر و خورشید -->
-                        <a href="index-fa.html" title="نسخه فارسی" style="display: flex; align-items: center;">
-                            <img src="images/shir-khorshid.svg.webp" alt="Persian" style="height: 20px; width: auto;">
+                        <!-- Flag link aligned vertically -->
+                        <a href="index-fa.html" title="نسخه فارسی" style="display: inline-flex; align-items: center; height: 100%;">
+                            <img src="images/shir-khorshid.svg.webp" alt="Persian" style="height: 24px; width: auto; vertical-align: middle; margin-top: 2px;">
                         </a>
                     </div>
                     <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
@@ -97,7 +97,6 @@
             </div> <!-- end s-header__content -->
 
         </header> <!-- end s-header -->
-
 
         <!-- # intro
         ================================================== -->
