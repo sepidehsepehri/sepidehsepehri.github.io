@@ -1,0 +1,198 @@
+/* =====================================================================
+ * custom-fa.css — only for the Persian page (index-fa.html)
+ * Loaded after custom.css: Persian font + right-to-left adjustments.
+ * ===================================================================== */
+
+/* Vazirmatn for everything (it also contains Latin letters) */
+html[lang="fa"] {
+    --font-1: "Vazirmatn", "Roboto Flex", Tahoma, sans-serif;
+    --font-2: "Vazirmatn", "Instrument Serif", Tahoma, serif;
+    --font-3: "Vazirmatn", "Antonio", Tahoma, sans-serif;
+}
+
+/* letter-spacing and uppercase break Persian letter joining */
+html[lang="fa"] body * {
+    letter-spacing: normal !important;
+    text-transform: none !important;
+}
+
+/* Persian needs a little more line height */
+html[lang="fa"] body {
+    line-height: 1.85;
+}
+
+html[lang="fa"] .lead,
+html[lang="fa"] .hero-desc,
+html[lang="fa"] .case-study__lead,
+html[lang="fa"] #outreach p {
+    line-height: 1.95;
+}
+
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3,
+html[lang="fa"] h4,
+html[lang="fa"] h5 {
+    line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------
+ * header
+ * --------------------------------------------------------------------- */
+html[lang="fa"] .header-brand__text {
+    font-size  : 1.7rem;
+    font-weight: 600;
+}
+
+html[lang="fa"] .lang-switch img {
+    width        : 26px;
+    height       : 26px;
+    border-radius: 50%;
+    object-fit   : cover;
+}
+
+/* the template positions the brand on the left and the burger on the right;
+   mirror them for right-to-left */
+html[dir="rtl"] .header-brand {
+    left : auto;
+    right: calc(var(--gutter) * 2);
+}
+
+html[dir="rtl"] .header-menu-toggle {
+    right: auto;
+    left : calc(var(--gutter) * 2 - var(--vspace-0_125));
+}
+
+/* ---------------------------------------------------------------------
+ * hero
+ * --------------------------------------------------------------------- */
+html[lang="fa"] .hero-name {
+    font-weight: 700;
+    font-size  : clamp(4.4rem, 7.5vw, 9rem);
+    line-height: 1.3;
+}
+
+html[lang="fa"] .hero-role {
+    font-size  : 1.7rem;
+    font-weight: 500;
+}
+
+html[lang="fa"] .hero-desc {
+    font-size: 2rem;
+}
+
+html[lang="fa"] .hero-btn,
+html[lang="fa"] .pill-btn {
+    font-size  : 1.6rem;
+    line-height: 1.2;
+}
+
+/* ---------------------------------------------------------------------
+ * section titles, leads, case study
+ * --------------------------------------------------------------------- */
+html[lang="fa"] .section-title {
+    font-weight: 600;
+}
+
+html[lang="fa"] .lead {
+    font-weight: 300;
+}
+
+html[lang="fa"] .case-study__title {
+    font-weight: 700;
+    font-size  : clamp(3rem, 3.8vw, 4.6rem);
+    line-height: 1.45;
+    max-width  : 26ch;
+}
+
+html[lang="fa"] .cs-stat__value {
+    font-weight: 700;
+    font-size  : clamp(3rem, 3.6vw, 4.6rem);
+    line-height: 1.3;
+}
+
+html[lang="fa"] .cs-subtitle,
+html[lang="fa"] .eyebrow,
+html[lang="fa"] .now-card__label {
+    font-size  : 1.4rem;
+    font-weight: 600;
+}
+
+html[lang="fa"] .cs-insight p {
+    font-size  : 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+html[lang="fa"] .pipeline h4,
+html[lang="fa"] .now-card h4,
+html[lang="fa"] .project-card__title {
+    font-weight: 700;
+}
+
+html[lang="fa"] .pipeline p,
+html[lang="fa"] .project-card__desc,
+html[lang="fa"] .now-card p:last-child {
+    line-height: 1.85;
+}
+
+html[lang="fa"] .beyond-block__title {
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------
+ * outreach: darken the right side, where the text sits
+ * --------------------------------------------------------------------- */
+html[dir="rtl"] #outreach::before {
+    background: linear-gradient(270deg, rgba(5, 10, 25, .82) 0%, rgba(5, 10, 25, .55) 55%, rgba(5, 10, 25, .25) 100%);
+}
+
+html[lang="fa"] #outreach p {
+    font-weight: 300;
+}
+
+/* ---------------------------------------------------------------------
+ * instagram strip
+ * --------------------------------------------------------------------- */
+html[lang="fa"] .follow-strip {
+    font-size  : 1.6rem;
+    font-weight: 400;
+}
+
+html[lang="fa"] .follow-strip__handle {
+    font-family: "Roboto Flex", var(--font-1);
+}
+
+/* ---------------------------------------------------------------------
+ * footer
+ * --------------------------------------------------------------------- */
+html[lang="fa"] .s-footer .lead {
+    line-height: 1.9;
+}
+
+/* ---------------------------------------------------------------------
+ * RTL fixes for the template header (it uses physical "right")
+ * --------------------------------------------------------------------- */
+html[dir="rtl"] .s-header__content {
+    justify-content: left;
+}
+
+html[dir="rtl"] .header-nav__links {
+    padding: 0 var(--vspace-1_25) 0 0;
+}
+
+/* formulas and numbers written left-to-right stay in one piece */
+html[dir="rtl"] span[dir="ltr"] {
+    unicode-bidi: isolate;
+    white-space : nowrap;
+}
+
+html[dir="rtl"] .cs-stat__value[dir="ltr"] {
+    text-align: right;
+}
+
+/* Persian digits for the pipeline step numbers: ۰۱، ۰۲ … */
+html[lang="fa"] .pipeline li::before {
+    content: "۰" counter(step, persian);
+}

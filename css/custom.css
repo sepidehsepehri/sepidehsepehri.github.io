@@ -434,8 +434,9 @@
 .cs-insight {
     margin       : 4.8rem 0 0;
     padding      : 2.4rem 2.8rem;
-    border-left  : 3px solid var(--accent);
-    border-radius: 0 12px 12px 0;
+    border-inline-start       : 3px solid var(--accent);
+    border-start-end-radius   : 12px;
+    border-end-end-radius     : 12px;
     background   : rgba(255, 255, 255, .04);
 }
 
@@ -623,7 +624,7 @@
     background-position: center;
     min-height         : 100vh;
     padding-top        : 18vh;
-    padding-bottom     : 14rem;
+    padding-bottom     : 12rem;
     border-top         : none;
 }
 
@@ -658,44 +659,6 @@
 
 #outreach p + p {
     margin-top: 2rem;
-}
-
-.astro-banner {
-    position        : absolute;
-    bottom          : 0;
-    left            : 0;
-    width           : 100%;
-    z-index         : 3;
-    padding         : 1.8rem 0;
-    text-align      : center;
-    background-color: rgba(0, 0, 0, .5);
-    border-top      : 1px solid rgba(255, 255, 255, .1);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter : blur(5px);
-}
-
-.astro-banner a {
-    display        : inline-flex;
-    align-items    : center;
-    gap            : 1.4rem;
-    color          : #fff;
-    font-weight    : 300;
-    font-size      : 1.3rem;
-    letter-spacing : 0.3em;
-    text-transform : uppercase;
-    text-decoration: none;
-}
-
-.astro-banner a:hover {
-    color: var(--accent);
-}
-
-.astro-banner .dot {
-    width           : 8px;
-    height          : 8px;
-    border-radius   : 50%;
-    background-color: var(--accent);
-    box-shadow      : 0 0 0 4px rgba(217, 119, 70, .25);
 }
 
 /* ---------------------------------------------------------------------
@@ -749,6 +712,47 @@
     width     : 100%;
     height    : 100%;
     object-fit: cover;
+}
+
+/* instagram strip under the drawings */
+.follow-strip {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-wrap       : wrap;
+    gap             : 0.6rem 1.4rem;
+    margin-top      : 1.6rem;
+    padding         : 1.8rem 2rem;
+    border-radius   : 14px;
+    background-color: var(--night);
+    color           : #fff;
+    text-decoration : none;
+    font-weight     : 300;
+    font-size       : 1.3rem;
+    letter-spacing  : 0.3em;
+    text-transform  : uppercase;
+    transition      : background-color .25s;
+}
+
+.follow-strip:hover,
+.follow-strip:focus {
+    background-color: var(--night-2);
+    color           : #fff;
+}
+
+.follow-strip .dot {
+    width           : 8px;
+    height          : 8px;
+    border-radius   : 50%;
+    background-color: var(--accent);
+    box-shadow      : 0 0 0 4px rgba(217, 119, 70, .25);
+}
+
+.follow-strip__handle {
+    color         : var(--accent);
+    text-transform: none;
+    letter-spacing: 0.05em;
+    font-weight   : 400;
 }
 
 /* videos */
