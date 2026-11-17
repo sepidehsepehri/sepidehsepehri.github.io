@@ -3472,7 +3472,7 @@ td:last-child {
     --content-padding-top   : var(--vspace-6);
     --content-padding-bottom: max(var(--vspace-5_5), 20vh);
 
-    background-image        : url(../images/intro-bg.png);
+    background-image        : url(../images/intro-bg.jpg);
     background-repeat       : no-repeat;
     background-position     : center top;
     background-size         : contain;

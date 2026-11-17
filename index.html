@@ -1,12 +1,47 @@
-        <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sepideh Sepehri</title>
+    <title>Sepideh Sepehri — Astrophysicist · Galaxy evolution with JWST</title>
+    <meta name="description" content="Sepideh Sepehri — astrophysicist (MSc Astrophysics & Cosmology, University of Padova) measuring galaxy merger pair fractions out to z ~ 10 with deep JWST fields and custom Python pipelines.">
+    <link rel="canonical" href="https://sepidehsepehri.github.io/">
+    <link rel="alternate" hreflang="en" href="https://sepidehsepehri.github.io/">
+    <link rel="alternate" hreflang="fa" href="https://sepidehsepehri.github.io/index-fa.html">
+
+    <!-- link previews (LinkedIn, email, WhatsApp, Telegram…)
+    ================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sepidehsepehri.github.io/">
+    <meta property="og:title" content="Sepideh Sepehri — Astrophysicist">
+    <meta property="og:description" content="Galaxy mergers in the early Universe with JWST · Python pipelines · outreach & art.">
+    <meta property="og:image" content="https://sepidehsepehri.github.io/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sepideh Sepehri",
+        "url": "https://sepidehsepehri.github.io/",
+        "jobTitle": "Astrophysicist",
+        "image": "https://sepidehsepehri.github.io/images/profile-pic-800.jpg",
+        "alumniOf": [
+            {"@type": "CollegeOrUniversity", "name": "University of Padova"},
+            {"@type": "CollegeOrUniversity", "name": "Tehran Polytechnic"}
+        ],
+        "knowsAbout": ["Galaxy evolution", "Galaxy mergers", "JWST", "Extragalactic astrophysics", "Python"],
+        "sameAs": [
+            "https://www.linkedin.com/in/sepidehsepehri/",
+            "https://scholar.google.com/citations?user=oOOZoukAAAAJ&hl=en",
+            "https://github.com/SepidehSepehri",
+            "https://www.instagram.com/astrosepide/"
+        ]
+    }
+    </script>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -17,6 +52,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- favicons
     ================================================== -->
@@ -25,29 +61,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Dark Mode Override Styles (Only for Intro) -->
-    <style>
-        /* فقط رنگ پس‌زمینه و متن‌های بخش اول رو تغییر میده */
-        #intro {
-            background-color: #050a19 !important;
-        }
-        
-        #intro,
-        #intro .intro-content__overline, 
-        #intro .intro-content__desc,
-        #intro h1 {
-            color: #ffffff !important;
-        }
-        
-        /* دکمه اسکرول پایین صفحه اول */
-        .intro-scroll__text { color: #ffffff !important; }
-        .intro-scroll__line { background-color: #ffffff !important; }
-    </style>
-
 </head>
 
 <body id="top">
-    
+
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -62,82 +79,87 @@
     ================================================== -->
     <div id="page" class="s-pagewrap is-home">
 
-<!-- # site header 
+        <!-- # site header
         ================================================== -->
         <header class="s-header">
 
             <div class="container s-header__content">
-                                   
-                <div class="s-header__block">
-                    <!-- قرار دادن اسم و پرچم در یک ردیف -->
-                    <div class="header-brand" style="display: flex; align-items: center;">
-                        <a class="header-brand__link" href="index.html">
-                            <span class="header-brand__text"></span>
-                        </a>
 
-                        
-                        <!-- لینک پرچم با قابلیت تنظیم دقیق ابعاد و مختصات X و Y -->
-                        <a href="index-fa.html" title="نسخه فارسی">
-                            <img src="images/shir-khorshid.svg.webp" alt="Persian" style="
-                                width: 35px; /* اندازه پرچم - میتونی بزرگتر یا کوچیکترش کنی */
-                                height: auto;
-                                /* 
-                                  تابع translate(X, Y):
-                                  عدد اول (250px): حرکت در محور X (چپ و راست). عدد مثبت میره راست، منفی میره چپ.
-                                  عدد دوم (320px): حرکت در محور Y (بالا و پایین). عدد مثبت میاد پایین، منفی میره بالا.
-                                  با تغییر این دو عدد پرچم رو دقیقا تنظیم کن!
-                                */
-                                transform: translate(15px, 8px); 
-                            ">
+                <div class="s-header__block">
+                    <div class="header-brand">
+                        <a class="header-brand__link" href="#top">
+                            <span class="header-brand__text">Sepideh Sepehri</span>
+                        </a>
+                        <a class="lang-switch" href="index-fa.html" hreflang="fa" title="نسخه فارسی">
+                            <img src="images/shir-khorshid.svg.webp" alt="فارسی" width="30" height="17">
                         </a>
                     </div>
 
                     <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
                 </div> <!-- end s-header__block -->
-            
-                <nav class="header-nav">    
+
+                <nav class="header-nav">
                     <ul class="header-nav__links">
-                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
-                        <li><a class="smoothscroll" href="#profile">Profile</a></li>
-                        <li><a class="smoothscroll" href="#works">Research</a></li>
-                        <li><a class="smoothscroll" href="#astrotourism">Astro Tourism</a></li>
-                        <li><a class="smoothscroll" href="#beyondscience">Beyond Science</a></li>
-                        <li><a href="mailto:sepidehsepehri75@gmail.com">Say Hello</a></li>
-                    </ul> <!-- end header-nav__links -->                
-                </nav> <!-- end header-nav -->         
-            
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#research">Research</a></li>
+                        <li><a class="smoothscroll" href="#projects">Projects</a></li>
+                        <li><a class="smoothscroll" href="#background">Background</a></li>
+                        <li><a class="smoothscroll" href="#outreach">Outreach</a></li>
+                        <li><a class="smoothscroll" href="#beyond">Art &amp; Media</a></li>
+                        <li class="nav-cv"><a href="Sepideh_Sepehri_CV_PHD.pdf" target="_blank" rel="noopener">CV</a></li>
+                    </ul> <!-- end header-nav__links -->
+                </nav> <!-- end header-nav -->
+
             </div> <!-- end s-header__content -->
 
         </header> <!-- end s-header -->
 
+
         <!-- # intro
         ================================================== -->
-        <section id="intro" class="s-intro target-section">
+        <section id="intro" class="s-intro">
 
             <div class="container s-intro__inner">
 
-                <div class="row intro-content-wrap">  
+                <div class="row intro-content-wrap">
                     <div class="column xl-11 intro-content">
-                        <div class="intro-content__overline" style="margin-bottom: 200px;">Decoding the Echoes of the Early Universe</div>
 
-                        <p class="intro-content__desc lead">
-"Hello, I'm Sepideh Sepehri. I believe the universe speaks in the subtle language of light and data. As an astrophysicist, I build the algorithms to listen. From decoding the ancient collisions of galaxies captured by JWST to sharing the magic of a dark night sky, my mission is to bridge the vastness of the cosmos with human curiosity."                    </div> <!-- end intro-main -->               
-                </div> <!-- end intro-main-wrap -->
+                        <div class="intro-content__overline">Decoding the echoes of the early Universe</div>
 
-            </div> <!-- end s-intro__inner -->   
-            
-            <a class="intro-scroll smoothscroll" href="#profile">
+                        <h1 class="hero-name">Sepideh Sepehri</h1>
+
+                        <p class="hero-role">Astrophysicist &nbsp;·&nbsp; Galaxy evolution with JWST</p>
+
+                        <p class="hero-desc">
+                            I measure how often galaxies merged across cosmic time, out to z&nbsp;~&nbsp;10,
+                            using deep JWST surveys and Python pipelines I build myself.
+                            MSc in Astrophysics &amp; Cosmology, University of Padova.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="hero-btn hero-btn--primary smoothscroll" href="#research">See my research</a>
+                            <a class="hero-btn" href="Sepideh_Sepehri_CV_PHD.pdf" target="_blank" rel="noopener">Download CV</a>
+                            <a class="hero-btn" href="mailto:sepidehsepehri75@gmail.com">Email me</a>
+                        </div>
+
+                    </div> <!-- end intro-content -->
+                </div> <!-- end intro-content-wrap -->
+
+            </div> <!-- end s-intro__inner -->
+
+            <a class="intro-scroll smoothscroll" href="#about">
                 <div class="intro-scroll__text">Scroll</div>
                 <div class="intro-scroll__line"></div>
             </a> <!-- end intro-scroll -->
 
         </section> <!-- end s-intro -->
 
-        <!-- # profile
-        ================================================== -->
-        <section id="profile" class="s-profile target-section">
 
-            <div id="profile-about" class="s-about">
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-profile target-section">
+
+            <div class="s-about">
 
                 <div class="s-about__inner container">
 
@@ -149,514 +171,536 @@
 
                         <div class="grid-block__item s-about__media">
                             <figure class="about-profile-pic">
-                                <img src="images/profile-pic.jpg" srcset="images/profile-pic.jpg 1x, 
-                                          images/profile-pic@2x.jpg 2x" alt="Profile Picture">
+                                <img src="images/profile-pic-800.jpg"
+                                     srcset="images/profile-pic-800.jpg 800w, images/profile-pic.jpg 1179w"
+                                     sizes="(max-width: 800px) 90vw, 400px"
+                                     width="800" height="977" alt="Portrait of Sepideh Sepehri">
                             </figure>
                         </div> <!--end s-about__media -->
 
                         <div class="grid-block__item s-about__intro">
                             <p class="lead">
-Translating the mechanics of the universe into the language of computation. I build the digital architecture needed to process massive astronomical datasets, turning abstract numbers into the history of the cosmos.                            </p>
+                                I believe the universe speaks in the subtle language of light and data, and I build the
+                                algorithms to listen: turning huge astronomical catalogs into the history of how galaxies grew.
+                            </p>
                         </div> <!--end s-about__intro -->
 
                         <div class="grid-block__item s-about__main">
                             <p>
-I earned my MSc in Astrophysics & Cosmology from the University of Padova, dedicating my research to the cosmic history of galaxy evolution. During my thesis, I sifted through the ~500,000 galaxies in the ASTRODEEP-JWST fields to trace merger pair fractions up to z~10. Decoding this early era of the universe required absolute precision, leading me to architect custom Python pipelines, to seamlessly handle catalog merging and tame statistical uncertainties.                    
+                                I hold an MSc in Astrophysics &amp; Cosmology from the University of Padova, where I worked
+                                with Prof.&nbsp;Giulia Rodighiero on galaxy mergers in deep JWST fields. For my thesis I built
+                                a Python pipeline that searches the ~500,000 sources of the ASTRODEEP-JWST catalogs for close
+                                galaxy pairs and measures the major-merger pair fraction out to z&nbsp;~&nbsp;10.
+                            </p>
                             <p>
-Today, my curiosity drives me to the intersection of astronomy and artificial intelligence. In my independent research, I am actively applying machine learning techniques to astronomical data, exploring advanced regression, classification, and clustering models via Scikit-learn to revolutionize how we classify galaxy morphology and identify cosmic mergers                            </p>
+                                Since graduating I have kept that project going: extending it to the new COSMOS2025 and
+                                CEERS catalogs, testing it against the Santa Cruz semi-analytic model, and turning it into a
+                                first-author paper. I also collaborate remotely on JWST spectroscopy of high-redshift sources
+                                in the PRIMER-COSMOS field.
+                            </p>
+                            <p>
+                                I'm looking for a PhD position in extragalactic astrophysics, ideally on a project that
+                                combines JWST data with careful statistics or machine learning.
                             </p>
 
-                            <div class="available-block-wrap">
-                                <a href="Sepideh_Sepehri_CV_PHD.pdf" download class="available-block pulse" style="text-decoration: none; cursor: pointer;">
-                                    <div class="dot"></div>
-                                <span class="available-text">Download My CV</span>
-                            </a> 
-                            </div> <!--end available-block-wrap -->                            
+                            <div class="about-actions">
+                                <a class="pill-btn pill-btn--solid" href="Sepideh_Sepehri_CV_PHD.pdf" target="_blank" rel="noopener">
+                                    <span class="dot"></span> Download my CV
+                                </a>
+                                <a class="pill-btn" href="mailto:sepidehsepehri75@gmail.com">Get in touch</a>
+                            </div>
                         </div> <!--end s-about__main -->
 
                     </div> <!--end grid-block -->
 
                 </div> <!-- end s-about__inner -->
 
-            </div> <!--end s-about -->  
-                    
-            
-            
-            <!-- # works
+            </div> <!--end s-about -->
+
+        </section> <!-- end about -->
+
+
+        <!-- # research (featured case study)
         ================================================== -->
-<div id="works" class="s-profile-block s-profile-block--start work-experience container">
+        <section id="research" class="s-section target-section">
 
-                <div class="row s-profile-block__content">
+            <div class="container">
 
-                    <div class="column xl-4 md-12 s-profile-block__content-start">
-                       <h2 data-num="02" class="section-title">Experience</h2> 
-                    </div> <!-- end s-profile-block__content-start -->
-                    
-                    
-                <div class="column xl-8 md-12 s-profile-block__content-end">
-                        <div class="grid-cols info-list">
-                            <div class="grid-cols__column info-card info-card--work">
-                                <div class="info-card__header">
-                                    <h5 class="info-card__title">Galaxy Evolution</h5>
-                                    <p class="info-card__entity">University of Padova</p>
-                                    <p class="info-card__date">Oct 2024 — Jul 2025</p>
-                                </div>
-                                <p class="info-card__desc">
-                                Analyzed ~500,000 galaxies from the ASTRODEEP-JWST fields to measure merger pair fractions up to z~10. Developed custom Python pipelines (Astropy, NumPy, SciPy) for catalog merging, companion search, and statistical uncertainty assessments.                                </p>
-                            </div>
-                <div class="grid-cols__column info-card info-card--work">
-                                <div class="info-card__header">
-                                    <h5 class="info-card__title">Machine Learning</h5>
-                                    <p class="info-card__entity">Independent Researcher</p>
-                                    <p class="info-card__date">Aug 2025 — Present</p>
-                                </div>
-                                <p class="info-card__desc">
-                                Exploring ML applications in galaxy morphology and merger identification. Implemented regression, classification, and clustering models using ckdTree and Scikit-learn.
-                                </p>
-                            </div>
-                            <div class="grid-cols__column info-card info-card--work">
-                                <div class="info-card__header">
-                                    <h5 class="info-card__title">Gravitational Waves</h5>
-                                    <p class="info-card__entity">University of Padova</p>
-                                    <p class="info-card__date">Mar 2024 — Jul 2024</p>
-                                </div>
-                                <p class="info-card__desc">
-                                Reviewed gravitational wave generation using Boltzmann equations and assessed signal detectability with LISA and the Einstein Telescope.
-                                </p>
-                            </div>
-                            <div class="grid-cols__column info-card info-card--work">
-                                <div class="info-card__header">
-                                    <h5 class="info-card__title">Exoplanet Transits</h5>
-                                    <p class="info-card__entity">University of Padova</p>
-                                    <p class="info-card__date">Oct 2023 — Jan 2024</p>
-                                </div>
-                                <p class="info-card__desc">
-                                Performed light-curve modeling of the exoplanet WASP-12b using TESS and TASTE photometry. Applied Python with batman and emcee for MCMC parameter estimation.
-                                </p>
-                            </div>
-                            <div class="grid-cols__column info-card info-card--work">
-                                <div class="info-card__header">
-                                    <h5 class="info-card__title">Satellite Ground Station Team</h5>
-                                    <p class="info-card__entity">CubeSats (ESA Program)</p>
-                                    <p class="info-card__date">Feb 2023 — Sept 2023</p>
-                                </div>
-                                <p class="info-card__desc">
-                                Worked on ground station operations for an ESA-supported CubeSat. Gained experience with control software, link budgets, and VHF/UHF systems.
-                                </p>
-                            </div>  
+                <div class="row">
+                    <div class="column xl-4 md-12">
+                        <h2 data-num="02" class="section-title">Research</h2>
+                    </div>
+                    <div class="column xl-8 md-12">
+                        <p class="lead section-intro">
+                            My main project: a census of merging galaxy pairs in the deepest JWST images, built from
+                            raw catalogs to final statistics.
+                        </p>
+                    </div>
+                </div>
+
+                <article class="case-study">
+
+                    <span class="case-study__status">MSc thesis &rarr; first-author paper in preparation</span>
+
+                    <h3 class="case-study__title">How often did galaxies collide in the early Universe?</h3>
+
+                    <p class="case-study__lead">
+                        Mergers can trigger bursts of star formation and help build massive galaxies, but counting them
+                        at high redshift is hard: with only photometric redshifts, a true pair is easily confused with two
+                        unrelated galaxies that just happen to line up on the sky. I built a pipeline that turns deep JWST
+                        catalogs into a probabilistic census of close pairs, back to when the Universe was about
+                        500 million years old.
+                    </p>
+                    <p class="case-study__meta">
+                        University of Padova, with Prof.&nbsp;Giulia Rodighiero &nbsp;·&nbsp; 2024 – present
+                        <!-- When it is on arXiv, add:  &nbsp;·&nbsp; <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> -->
+                    </p>
+
+                    <div class="cs-stats">
+                        <div class="cs-stat">
+                            <div class="cs-stat__value">7</div>
+                            <div class="cs-stat__label">deep JWST fields, plus COSMOS2025 &amp; CEERS DR1</div>
                         </div>
-                    </div>  <!-- end s-profile-block__content-end -->
+                        <div class="cs-stat">
+                            <div class="cs-stat__value">~500K</div>
+                            <div class="cs-stat__label">sources in the parent catalogs</div>
+                        </div>
+                        <div class="cs-stat">
+                            <div class="cs-stat__value">~100K</div>
+                            <div class="cs-stat__label">galaxies inspected by eye</div>
+                        </div>
+                        <div class="cs-stat">
+                            <div class="cs-stat__value">z ≈ 10</div>
+                            <div class="cs-stat__label">earliest epoch probed</div>
+                        </div>
+                    </div>
 
+                    <h4 class="cs-subtitle">How the pipeline works</h4>
+
+                    <ol class="pipeline">
+                        <li>
+                            <h4>Data</h4>
+                            <p>Seven ASTRODEEP-JWST fields (CEERS, Abell&nbsp;2744, NGDEEP, PRIMER-COSMOS, PRIMER-UDS, JADES-GN, JADES-GS), later cross-checked with COSMOS2025 and CEERS DR1.</p>
+                        </li>
+                        <li>
+                            <h4>Clean sample</h4>
+                            <p>Mass-complete galaxies with 8 &lt; log&nbsp;M<sub>*</sub>/M<sub>☉</sub> &lt; 10, split into red and blue populations by NIRCam colour.</p>
+                        </li>
+                        <li>
+                            <h4>Eyes on every galaxy</h4>
+                            <p>Multi-band NIRCam cutouts for every source, checked one by one to remove artefacts and spurious detections.</p>
+                        </li>
+                        <li>
+                            <h4>Pair search</h4>
+                            <p>Companions at 10–50&nbsp;kpc with mass ratio ≥&nbsp;1:4, each pair weighted by its photometric-redshift probability.</p>
+                        </li>
+                        <li>
+                            <h4>Uncertainties</h4>
+                            <p>Bootstrap resampling, plus cross-matching against independent catalogs to catch contamination.</p>
+                        </li>
+                        <li>
+                            <h4>Theory test</h4>
+                            <p>Comparison with pairs drawn from the Santa Cruz semi-analytic model (SC-SAM).</p>
+                        </li>
+                    </ol>
+
+                    <div class="cs-insight">
+                        <span class="eyebrow">Lesson learned</span>
+                        <p>
+                            A sharp spike in the pair fraction at z ≈ 8–9 turned out to be spurious sources, not real
+                            mergers. At the highest redshifts, catalog reliability matters as much as the statistics.
+                        </p>
+                    </div>
+
+                    <!-- OPTIONAL FIGURE: a mosaic of your JWST cutouts would look great here.
+                    <figure class="cs-figure">
+                        <img src="images/research/cutout-mosaic.jpg" alt="Mosaic of JWST NIRCam cutouts of galaxy pairs" loading="lazy">
+                        <figcaption>A few of the galaxy pairs from the visual inspection.</figcaption>
+                    </figure>
+                    -->
+
+                    <ul class="tag-list">
+                        <li>Python</li>
+                        <li>Astropy</li>
+                        <li>NumPy / SciPy</li>
+                        <li>Matplotlib</li>
+                        <li>Bootstrap statistics</li>
+                        <li>TOPCAT</li>
+                        <li>DS9</li>
+                    </ul>
+
+                </article> <!-- end case-study -->
+
+                <div class="now-grid">
+
+                    <div class="now-card">
+                        <span class="now-card__label">Ongoing</span>
+                        <h4>High-redshift spectroscopy in PRIMER-COSMOS</h4>
+                        <p class="now-card__meta">Remote research collaboration with Dr.&nbsp;Ali Khostovan · 2026 – present</p>
+                        <p>Helping characterise the nature of high-redshift sources in the PRIMER-COSMOS field with JWST spectroscopy.</p>
+                    </div>
+
+                    <div class="now-card">
+                        <span class="now-card__label">Ongoing</span>
+                        <h4>Machine learning for galaxy catalogs</h4>
+                        <p class="now-card__meta">Independent project · Aug 2025 – present</p>
+                        <p>Exploring regression, classification and clustering models (scikit-learn) for galaxy morphology and merger identification.</p>
+                        <!-- If you put the notebooks on GitHub, add a link here:
+                        <p><a href="https://github.com/SepidehSepehri/REPO-NAME">Code on GitHub →</a></p> -->
+                    </div>
+
+                </div> <!-- end now-grid -->
+
+            </div> <!-- end container -->
+
+        </section> <!-- end research -->
+
+
+        <!-- # projects
+        ================================================== -->
+        <section id="projects" class="s-section target-section">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="column xl-4 md-12">
+                        <h2 data-num="03" class="section-title">Projects</h2>
+                    </div>
+                    <div class="column xl-8 md-12">
+                        <p class="lead section-intro">
+                            From exoplanets to gravitational waves to a satellite in orbit: projects that taught me
+                            to work with very different kinds of data.
+                        </p>
+
+                        <div class="project-grid">
+
+                            <!-- To use your own plot instead of the illustration, replace the <img src=...> with e.g. images/projects/wasp12b-lightcurve.png -->
+                            <article class="project-card">
+                                <figure class="project-card__visual">
+                                    <img src="images/projects/transit.svg" alt="" loading="lazy" width="640" height="360">
+                                </figure>
+                                <div class="project-card__body">
+                                    <p class="project-card__meta">University of Padova · Oct 2023 – Jan 2024</p>
+                                    <h3 class="project-card__title">The transit of the hot Jupiter WASP-12b</h3>
+                                    <p class="project-card__desc">Modelled the transit light curve of WASP-12b from TESS and TASTE photometry, and fitted the planet's parameters with MCMC sampling.</p>
+                                    <ul class="tag-list">
+                                        <li>Python</li>
+                                        <li>batman</li>
+                                        <li>emcee / MCMC</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <figure class="project-card__visual">
+                                    <img src="images/projects/gravitational-waves.svg" alt="" loading="lazy" width="640" height="360">
+                                </figure>
+                                <div class="project-card__body">
+                                    <p class="project-card__meta">University of Padova · Mar – Jul 2024</p>
+                                    <h3 class="project-card__title">Gravitational waves: from generation to detection</h3>
+                                    <p class="project-card__desc">Reviewed how gravitational waves are generated using the Boltzmann-equation formalism, and assessed how detectable the signals are for LISA and the Einstein Telescope.</p>
+                                    <ul class="tag-list">
+                                        <li>Cosmology</li>
+                                        <li>LISA</li>
+                                        <li>Einstein Telescope</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <figure class="project-card__visual">
+                                    <img src="images/projects/cubesat.svg" alt="" loading="lazy" width="640" height="360">
+                                </figure>
+                                <div class="project-card__body">
+                                    <p class="project-card__meta">ESA-supported CubeSat programme · Feb – Sep 2023</p>
+                                    <h3 class="project-card__title">Ground station for a CubeSat</h3>
+                                    <p class="project-card__desc">Part of the ground-station team for an ESA-supported CubeSat, working with control software, link budgets and VHF/UHF communication.</p>
+                                    <ul class="tag-list">
+                                        <li>Space systems</li>
+                                        <li>Link budgets</li>
+                                        <li>VHF / UHF</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <figure class="project-card__visual">
+                                    <img src="images/projects/observatory.svg" alt="" loading="lazy" width="640" height="360">
+                                </figure>
+                                <div class="project-card__body">
+                                    <p class="project-card__meta">University of Padova · Asiago Observatory</p>
+                                    <h3 class="project-card__title">Observing at Asiago</h3>
+                                    <p class="project-card__desc">Hands-on photometry and spectroscopy at the Asiago Astrophysical Observatory.</p>
+                                    <ul class="tag-list">
+                                        <li>Photometry</li>
+                                        <li>Spectroscopy</li>
+                                        <li>Telescope operations</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                        </div> <!-- end project-grid -->
+                    </div>
                 </div> <!-- end row -->
 
-            </div> <!-- end work-experience -->
+            </div> <!-- end container -->
+
+        </section> <!-- end projects -->
 
 
-            <div id="profile-education" class="s-profile-block education container">
+        <!-- # background (education + skills)
+        ================================================== -->
+        <section id="background" class="s-profile target-section">
+
+            <div class="s-profile-block s-profile-block--start education container">
 
                 <div class="row s-profile-block__content">
 
                     <div class="column xl-4 md-12 s-profile-block__content-start">
-                       <h2 data-num="03" class="section-title">Education</h2> 
-                    </div> <!-- end s-profile-block__content-start -->
+                        <h2 data-num="04" class="section-title">Education</h2>
+                    </div>
 
-                    <div class="column xl-8 md-12 s-profile__content-end">
+                    <div class="column xl-8 md-12 s-profile-block__content-end">
                         <div class="grid-cols info-list">
                             <div class="grid-cols__column info-card info-card--education">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">MSc in Astrophysics & Cosmology</h5>
+                                    <h5 class="info-card__title">MSc in Astrophysics &amp; Cosmology</h5>
                                     <p class="info-card__entity">University of Padova, Italy</p>
-                                    <p class="info-card__date">Oct 2022 — July 2025</p>
+                                    <p class="info-card__date">Oct 2022 — Jul 2025</p>
                                 </div>
                                 <p class="info-card__desc">
-                                Thesis: "The Role of Galaxy Mergers in the High Redshift Universe with Deep JWST Extragalactic Fields." Supervised by Prof. Giulia Rodighiero.
+                                    Thesis: “The Role of Galaxy Mergers in the High Redshift Universe with Deep JWST Extragalactic Fields.”
+                                    Supervised by Prof. Giulia Rodighiero.
                                 </p>
                             </div>
                             <div class="grid-cols__column info-card info-card--education">
                                 <div class="info-card__header">
                                     <h5 class="info-card__title">BSc in Physics</h5>
                                     <p class="info-card__entity">Tehran Polytechnic, Iran</p>
-                                    <p class="info-card__date">Sept 2015 — Sept 2020</p>
+                                    <p class="info-card__date">Sep 2015 — Sep 2020</p>
                                 </div>
                                 <p class="info-card__desc">
-                                Established foundational knowledge in physics, mathematics, and early programming logic, preparing for advanced cosmological research.
+                                    Foundations in physics, mathematics and programming.
                                 </p>
                             </div>
                         </div>
-                    </div>  <!-- end s-profile-block__content-end -->
+                    </div>
 
                 </div> <!-- end row -->
 
             </div> <!-- end education -->
 
-
-            <div id="profile-services" class="s-profile-block services container">
+            <div class="s-profile-block s-profile-block--end services container">
 
                 <div class="row s-profile-block__content">
 
                     <div class="column xl-4 md-12 s-profile-block__content-start">
-                       <h2 data-num="04" class="section-title">Technical Skills</h2> 
-                    </div> <!-- end s-profile-block__content-start -->
+                        <h2 data-num="05" class="section-title">Skills</h2>
+                    </div>
 
                     <div class="column xl-8 md-12 s-profile-block__content-end">
                         <div class="grid-cols info-list info-list--services">
 
                             <div class="grid-cols__column info-card info-card--services">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">Python Programming</h5>
+                                    <h5 class="info-card__title">Python &amp; scientific computing</h5>
                                 </div>
                                 <p class="info-card__desc">
-                                Advanced expertise using Astropy, NumPy, SciPy, Pandas, Matplotlib, and astroML for comprehensive data analysis and pipeline automation.
+                                    Astropy, NumPy, SciPy (incl. KD-tree neighbour search), Pandas, Matplotlib and astroML,
+                                    used to build end-to-end pipelines for large catalogs.
                                 </p>
-                            </div>                        
+                            </div>
                             <div class="grid-cols__column info-card info-card--services">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">Machine Learning</h5>
+                                    <h5 class="info-card__title">Statistics &amp; machine learning</h5>
                                 </div>
                                 <p class="info-card__desc">
-                                Applying scikit-learn and KDTree models for regression, classification, and clustering within complex astronomical datasets.
+                                    Bootstrap resampling, MCMC (emcee), and scikit-learn models for regression,
+                                    classification and clustering.
                                 </p>
-                            </div>                        
+                            </div>
                             <div class="grid-cols__column info-card info-card--services">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">Astronomical Software</h5>
+                                    <h5 class="info-card__title">Astronomical software</h5>
                                 </div>
                                 <p class="info-card__desc">
-                                Proficient in utilizing specialized tools such as TOPCAT, SAOImage DS9, SpecPro, and SExtractor.
+                                    TOPCAT, SAOImage DS9, SpecPro and SExtractor.
                                 </p>
-                            </div>                        
+                            </div>
                             <div class="grid-cols__column info-card info-card--services">
                                 <div class="info-card__header">
-                                    <h5 class="info-card__title">Observational Analysis</h5>
+                                    <h5 class="info-card__title">Visual communication</h5>
                                 </div>
                                 <p class="info-card__desc">
-                                Experience with light-curve modeling (MCMC) and hands-on photometry and spectroscopy at the Asiago Observatory.
+                                    Adobe Photoshop and Final Cut Pro for figures, outreach graphics and video.
                                 </p>
-                            </div>                          
-                             
+                            </div>
+
                         </div>
-                    </div>  <!-- end s-profile__content-end -->
+                    </div>
 
                 </div> <!-- end row -->
 
-            </div> <!-- end services -->
+            </div> <!-- end skills -->
 
-             <div id="profile-stats" class="s-profile-block s-profile-block--end stats container">
-                
-                <div class="row">
-                    <div class="column xl-4 md-12">                        
-                    </div>
-                    <div class="column xl-8 md-12 stats-group">
-                        <div class="stat-item">
-                            <div class="stat-item__value">500K+</div>
-                            <div class="stat-item__label">Galaxies<br> Analyzed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-item__value">4+</div>
-                            <div class="stat-item__label">Years<br> Research Exp</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-item__value">3+</div>
-                            <div class="stat-item__label">Data<br> Pipelines Built</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-item__value">1</div>
-                            <div class="stat-item__label">Upcoming<br> Publication</div>
-                        </div>                        
-                    </div> <!-- end stats-group -->
-                </div>
-                
-            </div> <!-- end stats -->
-        
-        </section> <!-- end s-profile -->
+        </section> <!-- end background -->
 
 
-
-            <div class="container">                
-                <div class="row s-works__header">
-                    <div class="column xl-4 md-12 s-works__header-start">
-                        <h2 data-num="05" class="section-title">Selected Projects</h2>
-                    </div>
-                    <div class="column xl-8 md-12 s-works__header-end">
-                        <p class="lead">
-                        A collection of analytical research projects focusing on the early universe, exoplanetary systems, and the implementation of machine learning within observational astronomy.
-                        </p>
-                    </div>
-                </div><!-- end s-works__header -->        
-            </div> <!-- end container -->
-
- 
-<!-- # astro tourism
+        <!-- # outreach / astro tourism
         ================================================== -->
-        <style>
-            /* استایل‌های بخش Astro Tourism (تصویر تمام‌صفحه) */
-            #astrotourism {
-                background-image: url('images/astro-tour.png') !important;
-                background-size: cover !important;
-                background-position: center !important;
-                background-repeat: no-repeat !important;
-                min-height: 100vh; /* کل صفحه رو میگیره */
-                position: relative;
-                padding-top: 20vh !important; 
-                padding-bottom: 5vh !important;
-                border-top: none !important;
-            }
-            
-            /* لایه تیره ملایم روی عکس */
-            #astrotourism::before {
-                content: "";
-                position: absolute;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background: rgba(0, 0, 0, 0.4); 
-                z-index: 1;
-            }
-            
-            #astrotourism .container {
-                position: relative;
-                z-index: 2; 
-            }
+        <section id="outreach" class="target-section">
 
-            /* نارنجی کردن تیتر */
-            #astrotourism h2, 
-            #astrotourism .section-title {
-                color: #d97746 !important; 
-                margin-top: 0;
-            }
-
-            /* استایل متن‌ها */
-            #astrotourism p, 
-            #astrotourism .lead {
-                color: #ffffff !important;
-                font-size: 2.5rem !important; 
-                line-height: 1.6 !important;
-                font-weight: 300;
-            }
-
-            /* --- استایل نوار تمام‌عرضِ به زودی --- */
-            .astro-banner {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه‌شفاف تاریک */
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-                padding: 1.5rem 0;
-                text-align: center;
-                z-index: 3;
-                backdrop-filter: blur(5px); /* افکت شیشه‌ای روی ستاره‌ها */
-            }
-        </style>
-
-        <section id="astrotourism" class="s-profile target-section">
             <div class="container">
-                <div class="row s-works__header">
-                    <div class="column xl-4 md-12 s-works__header-start">
-                        <h2 data-num="06" class="section-title">Astro Tourism</h2>
+                <div class="row">
+                    <div class="column xl-4 md-12">
+                        <h2 data-num="06" class="section-title">Outreach &amp; Astro-Tourism</h2>
                     </div>
-                    <div class="column xl-8 md-12 s-works__header-end">
-                        <p class="lead">
-                        My vision for Astro Tourism merges my background in observational cosmology with my hands-on experience in Rome's vibrant hospitality sector. Bringing diverse cultures together has taught me the profound power of human connection. I now aim to elevate that spirit of connection to the night sky.
+                    <div class="column xl-8 md-12">
+                        <p>
+                            My vision for astro-tourism brings together observational astronomy and my hands-on
+                            experience in Rome's hospitality sector, where welcoming people from every culture taught me
+                            the power of human connection. I want to extend that connection to the night sky.
                         </p>
-                        
-                        <p class="lead" style="margin-top: 2rem;">
-                        Inspired by my strategic proposal to revitalize astronomical infrastructure, my goal is to transform historical Silk Road caravanserais into modern 'hotel-observatories'. By integrating dark sky camps in pristine locations like the Lut Desert with immersive hospitality, we can honor the legacy of ancient observatories like Maragheh, turning science outreach into an unforgettable travel experience and driving a sustainable 'Astro-Economy'.
+                        <p>
+                            Building on a proposal I wrote for revitalising astronomical infrastructure, my goal is to turn
+                            historic Silk Road caravanserais into “hotel-observatories”: dark-sky camps in pristine places
+                            like the Lut Desert that honour the legacy of ancient observatories such as Maragheh, and turn
+                            science outreach into an unforgettable journey.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- نوار تمام‌عرض پایین سکشن -->
             <div class="astro-banner">
-                <div style="display: inline-flex; align-items: center; justify-content: center;">
-                    <!-- نقطه چشمک‌زن -->
-                    <div class="pulse" style="display: inline-block; margin-right: 15px;">
-                        <div class="dot" style="background-color: #d97746; margin: 0; position: relative;"></div>
-                    </div>
-                    <!-- متن نوار -->
-                    <span style="color: #ffffff; font-weight: 300; font-size: 1.1rem; letter-spacing: 4px; text-transform: uppercase;">
-                        More Updates on the Horizon
-                    </span>
-                </div>
+                <a href="https://www.instagram.com/astrosepide/" target="_blank" rel="noopener">
+                    <span class="dot"></span> Follow the journey on Instagram
+                </a>
             </div>
-        </section>
-            
-<!-- # beyond science
+
+        </section> <!-- end outreach -->
+
+
+        <!-- # beyond science
         ================================================== -->
-        <style>
-            /* استایل‌های اختصاصی برای روشن کردن بخش Beyond Science */
-            #beyondscience {
-                background-image: url('images/beyond-bg.png') !important;
-                background-color: #ffffff !important;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            
-            /* تیره کردن تیترها */
-            #beyondscience h2, 
-            #beyondscience h3, 
-            #beyondscience h4,
-            #beyondscience .section-title,
-            #beyondscience .portfolio-item__title {
-                color: #111827 !important;
-            }
+        <section id="beyond" class="s-works target-section">
 
-            /* تیره کردن متن‌های معمولی */
-            #beyondscience p, 
-            #beyondscience .lead,
-            #beyondscience .portfolio-item__services li {
-                color: #374151 !important;
-            }
+            <div class="container">
 
-            /* تغییر رنگ کارت‌های نقاشی برای زمینه روشن */
-            #beyondscience .portfolio-item {
-                background-color: rgba(0, 0, 0, 0.03) !important;
-                border-color: rgba(0, 0, 0, 0.1) !important;
-            }
-        </style>
-
-        <section id="beyondscience" class="s-works target-section" style="padding-top: 6rem;">
-            <div class="container">                
-                <div class="row s-works__header" style="margin-bottom: 4rem;">
-                    <div class="column xl-4 md-12 s-works__header-start">
+                <div class="row">
+                    <div class="column xl-4 md-12">
                         <h2 data-num="07" class="section-title">Beyond Science</h2>
                     </div>
-                    <div class="column xl-8 md-12 s-works__header-end">
-                        <p class="lead">
-                        "Because not all discoveries are made in the dark. A collection of earthly journeys, told through community, visual arts, and the stories we share along the way."                        </p>
-                    </div>
-                </div>       
-            </div> 
-
-
-            <!-- Visual Arts (Paintings Grid) -->
-            <div class="container" style="padding-bottom: 6rem;">
-                <h3 style="margin-bottom: 2rem; margin-left: 1.5rem;">My Drawings</h3>
-                    <p>"A different kind of observation. Just as astrophysics relies on capturing faint light from the cosmos, my pencil sketches explore the delicate interplay of light and shadow to capture human expression."</p>
-                 <div class="container portfolio-group-wrap">
-                
-                <div class="grid-block portfolio-group">
-
-                    <div class="portfolio-item portfolio-item--featured" data-title="Deva Cassel" data-images="images/folio/large/l-beauty-faith@2x.jpg" data-date="August 2023" data-link="https://www.instagram.com/astrosepide/p/CwQT0tUMzke/">   
-                        <a href="#0" class="portfolio-item__link" aria-label="View Project details">
-                            <img src="images/folio/featured-beauty-faith.jpg" srcset="images/folio/featured-beauty-faith.jpg 1x, 
-                                      images/folio/featured-beauty-faith@2x.jpg 2x" alt="Deva Cassel" class="portfolio-item__thumbnail">
-                            <span class="portfolio-item__title">Deva Cassel</span>
-                        </a> <!-- portfolio-item__link -->  
-
-                        <div class="portfolio-item__details">
-                            <div class="portfolio-item__description">
-                            </div>
-                            <ul class="portfolio-item__services">
-                                <li>Charcoal Painting</li>
-                            </ul>
-                        </div> <!-- portfolio-item__details -->                                 
-                    </div>   
-
-                    <div class="portfolio-item" data-title="Jung Ho-Yeon" data-images="images/folio/large/l-tropical@2x.jpg" data-date="Jan 2024" data-link="https://www.instagram.com/p/CUvVh26I8Vv/">  
-                        <a href="#0" class="portfolio-item__link" aria-label="View Project details">
-                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, 
-                                      images/folio/tropical@2x.jpg 2x" alt="Jung Ho-Yeon" class="portfolio-item__thumbnail">
-                            <span class="portfolio-item__title">Jung Ho-Yeon</span>
-                        </a>  <!-- portfolio-item__link -->  
-
-                        <div class="portfolio-item__details">
-                            <div class="portfolio-item__description">
-
-                            </div>
-                            <ul class="portfolio-item__services">
-                                <li>Charcoal Painting</li>
-                            </ul>
-                        </div> <!-- portfolio-item__details -->  
-                    </div>
-                    
-                    <div class="portfolio-item" data-title="Elizabeth Taylor" data-images="images/folio/large/l-grayscale@2x.jpg" data-date="August 2025" data-link="https://www.instagram.com/p/CW5bvORo1o-/?img_index=1">  
-                        <a href="#0" class="portfolio-item__link" aria-label="View Project details">
-                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, 
-                                      images/folio/grayscale@2x.jpg 2x" alt="Elizabeth Taylor" class="portfolio-item__thumbnail">
-                            <span class="portfolio-item__title">Elizabeth Taylor</span>
-                        </a> <!-- portfolio-item__link -->  
-
-                        <div class="portfolio-item__details">
-                            <div class="portfolio-item__description">
-
-                            </div>
-                            <ul class="portfolio-item__services">
-                                <li>Charcoal Painting</li>
-                            
-                            </ul>
-                        </div> <!-- portfolio-item__details -->   
-                    </div>
-                
-                    <div class="portfolio-item" data-title="Michael Jackson" data-images="images/folio/large/l-duality@2x.jpg" data-date="July 2024" data-link="https://www.instagram.com/p/CP8kvHJMmSf/">  
-                        <a href="#0" class="portfolio-item__link" aria-label="View Project details">
-                            <img src="images/folio/duality.jpg" srcset="images/folio/duality.jpg 1x, 
-                                      images/folio/duality@2x.jpg 2x" alt="Michael Jackson" class="portfolio-item__thumbnail">
-                            <span class="portfolio-item__title">Michael Jackson</span>
-                        </a>  <!-- portfolio-item__link -->  
-
-                        <div class="portfolio-item__details">
-                            <div class="portfolio-item__description">
-                    
-                            </div>
-                            <ul class="portfolio-item__services">
-                                <li>Charcoal Painting</li>
-                                
-                            </ul>
-                        </div> <!-- portfolio-item__details -->   
-                    </div>
-                
-                </div> <!-- end portfolio-group -->
-            </div> <!-- end portfolio-group-wrap -->             
-            
-        </section> <!--end s-works --> 
-
-            <!-- YouTube & Media -->
-            <div class="container" style="padding-bottom: 4rem;">
-                <div class="row">
-                    <div class="column xl-12 md-12">
-                        <h3 style="margin-bottom: 1.5rem;">Media & YouTube</h3>
-                        <p>
-                        "Beyond the data, my creative outlet lies in visual storytelling. I channel my experiences, travels, and daily life into engaging digital content. Through video editing and graphic design, I love transforming my cultural explorations into visual narratives, creating an online community where science, art, and life intersect."                    </div>
+                    <div class="column xl-8 md-12">
+                        <p class="lead section-intro">
+                            Not all discoveries are made in the dark. Portraits, videos and the stories I share along the way.
                         </p>
-                        
-<!-- Placeholder for YouTube Embeds -->
-<div style="background-color: rgba(0,0,0,0.03); padding: 3rem 1rem; border-radius: 8px; border: 1px dashed rgba(0,0,0,0.2); margin-top: 2rem;">
-    
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
-        
-        <!-- ویدیوی اول -->
-        <div style="flex: 1 1 45%; min-width: 300px; max-width: 560px;">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/qDvdX4oQfCA?si=WGl0M668CUUQ1Xys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
+                    </div>
+                </div>
 
-        <!-- ویدیوی دوم -->
-        <div style="flex: 1 1 45%; min-width: 300px; max-width: 560px;">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/6q9_tIpEnHc?si=qjUHbW0grvpOCUz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
+                <!-- drawings -->
+                <div class="beyond-block">
+                    <h3 class="beyond-block__title">Charcoal portraits</h3>
+                    <p class="beyond-block__text">
+                        A different kind of observation. Astrophysics is about capturing faint light; in my portraits I
+                        study the interplay of light and shadow in a human face.
+                    </p>
 
-    </div>
-</div>
+                    <div class="art-grid">
+
+                        <div class="portfolio-item" data-title="Deva Cassel" data-client="Portrait study" data-images="images/folio/large/l-beauty-faith@2x.jpg" data-date="August 2023" data-link="https://www.instagram.com/astrosepide/p/CwQT0tUMzke/">
+                            <a href="#0" class="portfolio-item__link" aria-label="View drawing: Deva Cassel">
+                                <img src="images/folio/featured-beauty-faith.jpg" alt="Charcoal portrait of Deva Cassel" class="portfolio-item__thumbnail" loading="lazy">
+                                <span class="portfolio-item__title">Deva Cassel</span>
+                            </a>
+                            <div class="portfolio-item__details">
+                                <div class="portfolio-item__description"></div>
+                                <ul class="portfolio-item__services">
+                                    <li>Charcoal drawing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item" data-title="Jung Ho-Yeon" data-client="Portrait study" data-images="images/folio/large/l-tropical@2x.jpg" data-date="Jan 2024" data-link="https://www.instagram.com/p/CUvVh26I8Vv/">
+                            <a href="#0" class="portfolio-item__link" aria-label="View drawing: Jung Ho-Yeon">
+                                <img src="images/folio/tropical.jpg" alt="Charcoal portrait of Jung Ho-Yeon" class="portfolio-item__thumbnail" loading="lazy">
+                                <span class="portfolio-item__title">Jung Ho-Yeon</span>
+                            </a>
+                            <div class="portfolio-item__details">
+                                <div class="portfolio-item__description"></div>
+                                <ul class="portfolio-item__services">
+                                    <li>Charcoal drawing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item" data-title="Elizabeth Taylor" data-client="Portrait study" data-images="images/folio/large/l-grayscale@2x.jpg" data-date="August 2025" data-link="https://www.instagram.com/p/CW5bvORo1o-/?img_index=1">
+                            <a href="#0" class="portfolio-item__link" aria-label="View drawing: Elizabeth Taylor">
+                                <img src="images/folio/grayscale.jpg" alt="Charcoal portrait of Elizabeth Taylor" class="portfolio-item__thumbnail" loading="lazy">
+                                <span class="portfolio-item__title">Elizabeth Taylor</span>
+                            </a>
+                            <div class="portfolio-item__details">
+                                <div class="portfolio-item__description"></div>
+                                <ul class="portfolio-item__services">
+                                    <li>Charcoal drawing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item" data-title="Michael Jackson" data-client="Portrait study" data-images="images/folio/large/l-duality@2x.jpg" data-date="July 2024" data-link="https://www.instagram.com/p/CP8kvHJMmSf/">
+                            <a href="#0" class="portfolio-item__link" aria-label="View drawing: Michael Jackson">
+                                <img src="images/folio/duality.jpg" alt="Charcoal portrait of Michael Jackson" class="portfolio-item__thumbnail" loading="lazy">
+                                <span class="portfolio-item__title">Michael Jackson</span>
+                            </a>
+                            <div class="portfolio-item__details">
+                                <div class="portfolio-item__description"></div>
+                                <ul class="portfolio-item__services">
+                                    <li>Charcoal drawing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div> <!-- end art-grid -->
+                </div> <!-- end drawings -->
+
+                <!-- videos -->
+                <div class="beyond-block">
+                    <h3 class="beyond-block__title">Media &amp; YouTube</h3>
+                    <p class="beyond-block__text">
+                        I edit and design my own videos, turning travels, culture and everyday life into visual stories
+                        where science, art and life meet.
+                        <!-- Add your channel link here:  <a href="https://www.youtube.com/@YOUR-CHANNEL">Visit my channel →</a> -->
+                    </p>
+
+                    <div class="video-grid">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube-nocookie.com/embed/qDvdX4oQfCA" title="YouTube video 1" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube-nocookie.com/embed/6q9_tIpEnHc" title="YouTube video 2" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div> <!-- end videos -->
+
+            </div> <!-- end container -->
 
         </section> <!-- end beyond science -->
-            
 
-        <!-- # footer 
+
+        <!-- # footer
         ================================================== -->
-        <footer id="footer" class="container s-footer">  
+        <footer id="footer" class="container s-footer">
 
             <div class="row s-footer__top">
 
                 <div class="column xl-6 md-12 s-footer__top-start">
                     <h5 class="footer-overline">Get In Touch</h5>
                     <p class="lead">
-                        Our universe is shaped by interactions. Whether it’s talking about computational cosmology, science outreach, or just a simple hello—I’d love to cross paths.                    </p>
+                        Our universe is shaped by interactions. Whether it's computational cosmology, a PhD project,
+                        science outreach or just a simple hello, I'd love to cross paths.
+                    </p>
                     <div class="footer-buttons">
                         <a href="mailto:sepidehsepehri75@gmail.com" class="btn">Drop Me An Email</a>
+                        <a href="Sepideh_Sepehri_CV_PHD.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Download CV</a>
                     </div>
                 </div> <!-- end s-footer__top-start -->
 
@@ -669,26 +713,27 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                             <li>Based in Italy</li>
                         </ul>
                     </div>
-               
+
                     <div class="footer-block grid-cols__column">
                         <h5 class="footer-title">Find Me Online</h5>
                         <ul class="footer-social">
-                            <li><a href="https://www.linkedin.com/in/sepidehsepehri/">LinkedIn</a></li>
-                            <li><a href="https://scholar.google.com/citations?user=oOOZoukAAAAJ&hl=en">Google Scholar</a></li>
-                            <li><a href="https://github.com/SepidehSepehri">Github</a></li>
-                            <li><a href="https://www.instagram.com/astrosepide/">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/sepidehsepehri/" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=oOOZoukAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                            <li><a href="https://github.com/SepidehSepehri" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.instagram.com/astrosepide/" target="_blank" rel="noopener">Instagram</a></li>
+                            <!-- <li><a href="https://orcid.org/0000-0000-0000-0000">ORCID</a></li> -->
                         </ul>
                     </div>
-                  
+
                 </div> <!-- end s-footer__top-end -->
 
-            </div> <!-- end s-foooter__top -->
+            </div> <!-- end s-footer__top -->
 
-            <div class="row s-footer__bottom"> 
+            <div class="row s-footer__bottom">
 
                 <div class="column xl-6 tab-12 s-footer__bottom-start">
                     <p class="ss-copyright">
-                        <span>© Sepideh Sepehri 2026</span> 
+                        <span>© Sepideh Sepehri 2026</span>
                         <span>Design by <a href="https://styleshout.com/">StyleShout</a></span>
                     </p>
                 </div>
@@ -696,43 +741,41 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                 <div class="column xl-3 lg-4 md-6 s-footer__bottom-end">
                     <p class="ss-back-to-top">
                         <a href="#top" class="ss-back-to-top__link smoothscroll">
-                            <span class="ss-back-to-top__text">                                
-                            Back to top
-                            </span>                            
+                            <span class="ss-back-to-top__text">Back to top</span>
                             <span class="ss-back-to-top__icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
-                            </span>  
-                        </a>                      
+                            </span>
+                        </a>
                     </p>
                 </div>
 
             </div> <!-- end s-footer__bottom -->
 
-        </footer> <!-- end s-footer -->        
+        </footer> <!-- end s-footer -->
 
     </div> <!-- end page-wrap -->
 
 
-    <!-- portfolio modal
+    <!-- portfolio modal (opens when a drawing is clicked)
     ================================================== -->
     <div class="modal" id="portfolio-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-                
+
         <button class="modal__close-btn" aria-label="Close modal"></button>
 
         <div class="modal__content">
             <div class="modal__image-container" id="modal-image-container"></div>
             <div class="modal__text-container" id="modal-text-container">
-                
+
                 <h3 class="modal__title" id="modal-title"></h3>
                 <div class="modal__description-text" id="modal-description-text"></div>
 
-                <div class="modal__info-group grid-cols" id="modal-info-group"> 
+                <div class="modal__info-group grid-cols" id="modal-info-group">
                     <div class="modal__info grid-cols__column">
-                        <h5>Category</h5>
+                        <h5>Medium</h5>
                         <ul id="modal-services"></ul>
-                    </div>                     
+                    </div>
                     <div class="modal__info grid-cols__column">
-                        <h5>Project</h5>
+                        <h5>Series</h5>
                         <p id="modal-client"></p>
                     </div>
                     <div class="modal__info grid-cols__column">
@@ -741,8 +784,8 @@ Today, my curiosity drives me to the intersection of astronomy and artificial in
                     </div>
                     <div class="modal__info grid-cols__column modal__link-container" id="modal-link-container">
                         <p>
-                            <a class="modal__link" id="modal-link" href="#" target="_blank">
-                                Project Link
+                            <a class="modal__link" id="modal-link" href="#" target="_blank" rel="noopener">
+                                View on Instagram
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.vercel.app/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></svg>
                             </a>
                         </p>
