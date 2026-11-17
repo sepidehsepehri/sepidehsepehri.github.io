@@ -196,3 +196,17 @@ html[dir="rtl"] .cs-stat__value[dir="ltr"] {
 html[lang="fa"] .pipeline li::before {
     content: "۰" counter(step, persian);
 }
+
+/* outreach ideas: Persian step numbers and weights */
+html[lang="fa"] #outreach .outreach-ideas li::before {
+    content: "۰" counter(idea, persian);
+}
+
+html[lang="fa"] #outreach .outreach-ideas h3,
+html[lang="fa"] #outreach .outreach-event h3 {
+    font-weight: 700;
+}
+
+html[lang="fa"] #outreach .outreach-ideas p {
+    line-height: 1.85;
+}
